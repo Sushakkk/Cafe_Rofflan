@@ -29,4 +29,8 @@ class Dishes(models.Model):
         verbose_name_plural = 'Блюда'
 
     def __str__(self):
-        return f'{self.name} Количество - {self.quantity}'
+        return self.name
+    
+    
+    def display_id(self):
+        return f"{self.id:05}"
