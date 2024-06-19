@@ -1,0 +1,14 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "first_name": "Ксения",
+      "last_name": "Павловна",
+      "surname": "Карпова",
+      "phone": "+7 (977)-420-1895",
+      "image": "",
+      "email": "ksenia.karpova.4@mail.ru"
+    }
+  }
+]
