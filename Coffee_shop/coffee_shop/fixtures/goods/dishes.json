@@ -1,0 +1,26 @@
+[
+  {
+    "model": "goods.dishes",
+    "pk": 1,
+    "fields": {
+      "name": "Вензель с малиной",
+      "slug": "venzel-s-malinoj",
+      "description": "очень вкусно",
+      "image": "goods_images/a1bc8f3db8dc27e46c489090afa51fef-680x500_F9B9B2y.jpeg",
+      "price": "175.00",
+      "category": 1
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 2,
+    "fields": {
+      "name": "Муравейник",
+      "slug": "muravejnik",
+      "description": "вау вау вау",
+      "image": "goods_images/334746_1.jpg",
+      "price": "110.00",
+      "category": 2
+    }
+  }
+]

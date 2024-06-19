@@ -1,0 +1,12 @@
+[
+  {
+    "model": "goods.categories",
+    "pk": 1,
+    "fields": { "name": "Выпечка", "slug": "vypechka" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 2,
+    "fields": { "name": "Пирожные", "slug": "pirozhnye" }
+  }
+]
