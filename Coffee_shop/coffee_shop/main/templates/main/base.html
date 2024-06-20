@@ -1,14 +1,7 @@
 {% load static %}
 
-<<<<<<< HEAD
 {% load goods_tags  %}
 
-=======
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
->>>>>>> origin/main
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,9 +68,17 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+
+
+                    <form class="d-flex" role="search" action="{% url "catalog:search" %}" method="get">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success text-white" type="submit">Поиск</button>
+
+
+
+
+
                     </form>
                 </div>
             </div>
@@ -100,7 +101,7 @@
 
 
                         {% for category in categories  %}
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">{{category.name}}</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" category.slug %}">{{category.name}}</a></li>
                         {% endfor %}
 
 
