@@ -13,14 +13,12 @@ def catalog(request, category_slug=None):
     query = request.GET.get('q', None)
     
     
-    
+
     if category_slug == "all":
         goods = Dishes.objects.all()
     elif query:
         goods = q_search(query)
     else: goods = Dishes.objects.filter(category__slug=category_slug)
-   
-   
    
    
    
@@ -46,3 +44,9 @@ def dish(request, dish_slug):
     }
     
     return render(request, 'goods/dish.html', context)
+
+
+
+
+
+

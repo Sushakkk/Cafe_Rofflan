@@ -1,0 +1,70 @@
+{% extends "main/base_main.html" %}
+{% load static %}
+
+
+
+
+
+{% block body %}
+
+<!-- MAIN -->
+<main>
+
+    <div class="container">
+
+        <div class="main-content">
+
+            <div>
+                <div class="main-content_about">Restauran</div>
+
+                <h1>Italian<br> Cuisine</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales senectus dictum arcu sit tristique donec eget.</p>
+
+                <div class="main-content__buttons">
+                    <a href="#">
+                        Order now
+                    </a>
+
+                    {% comment %} <a href="{% url 'goods:menu' category.slug %}">
+                        Menu
+                    </a> {% endcomment %}
+                    
+                </div>
+            </div>
+
+            <div>
+                <img src={% static 'main/images/main_bg.png' %} alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- WELCOME -->
+<section class="welcome">
+
+    <div class="container">
+
+        <div class="welcome-inner">
+
+            <img src="assets/images/welcome_bg.png" alt="">
+
+            <div>
+                <h2>Welcome to <span>delizioso</span></h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
+
+                <a href="#">See our menu</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock body %}

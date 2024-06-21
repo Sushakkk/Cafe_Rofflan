@@ -11,10 +11,6 @@ from goods.models import Categories
 
 
 def index(request):
-    
-    
-    
-
     context = {
 
         'title': 'Home - Главная',
@@ -24,12 +20,7 @@ def index(request):
     
     }
 
-
-
-
     return render(request, 'main/index.html', context)
-
-
 
 def about(request):
 
@@ -44,6 +35,10 @@ def about(request):
     }
 
 
-
-
     return render(request, 'main/about.html', context)
+
+
+def main_page(request):
+    return render(request, 'main/main.html')
+
+

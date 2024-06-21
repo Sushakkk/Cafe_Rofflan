@@ -128,9 +128,16 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
-    ]
+    BASE_DIR / 'static',  # Общая директория
+    BASE_DIR / 'main/static',  # Директория приложения main
+    BASE_DIR / 'goods/static',  # Директория приложения goods
+    BASE_DIR / 'baskets/static',  # Директория приложения baskets
+    BASE_DIR / 'users/static',  # Директория приложения users
+    BASE_DIR / 'orders/static',  # Директория приложения orders
+]
 
 
 MEDIA_URL = 'media/'

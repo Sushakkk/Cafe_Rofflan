@@ -26,7 +26,7 @@ from coffee_shop import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls', namespace='main')),
-    path('catalog/', include('goods.urls', namespace='catalog'))
+    path('catalog/', include('goods.urls', namespace='catalog')),
 ]
 
 
