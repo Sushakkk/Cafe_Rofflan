@@ -28,6 +28,7 @@ class Dishes(models.Model):
         db_table = 'dish'
         verbose_name = 'Блюдо'
         verbose_name_plural = 'Блюда'
+        ordering: ("id", ) #по какому параметру сортируются данные при отображении на странице
 
     def __str__(self):
         return self.name
