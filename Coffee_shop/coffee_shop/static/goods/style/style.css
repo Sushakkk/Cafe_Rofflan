@@ -1,0 +1,217 @@
+/* MENU */
+:root {
+    --font-size-h3: 30px;
+    --font-size-p: 28px;
+    --font-size-price: 20px;
+    --text-white: #fff
+
+}
+
+
+
+.menu {
+    padding-top: 164px;
+    padding-bottom: 201px;
+}
+
+.menu h2 {
+    font-family: "Tinos", serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 200%;
+    color: var(--black);
+    margin-bottom: 60px;
+}
+#card_name{
+    font-size: var(--font-size-p);
+}
+#card-title{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+   
+}
+
+
+.menu-buttons a {
+    background-color: rgba(208,204,199, 0.1);
+    color: var(--black);
+    text-decoration: none;
+    padding: 17px 64px;
+    border-radius: 162px;
+    transition: background-color .3s ease;
+    
+}
+
+.menu-buttons a:hover {
+    background-color: var(--orange);
+}
+
+.menu-buttons a.checked {
+    background-color: var(--black);
+    color: var(--text-white);
+}
+
+
+
+
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 88px;
+}
+
+.menu-item {
+    width: 32%;
+    background-color: rgba(208, 204, 199, 0.1);
+    border-radius: 70px;
+    text-align: center;
+    padding: 35px 29px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    justify-content: space-between;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    max-height: 250px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-weight: 600;
+    font-size: var(--font-size-h3);
+    line-height: 200%;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    font-size: var(--font-size-price);
+    line-height: 200%;
+    color: #59442B;
+   
+}
+
+
+
+
+
+
+
+.menu-item__last {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+.menu-item__last p {
+    margin: 0; /* Убирает отступы */
+    font-weight: 600;
+    font-size: var(--font-size-price);
+}
+
+.menu-item__last a {
+    background-color: var(--orange);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 11px 36px;
+    border-radius: 162px;
+    font-size: var(--font-size-price);
+    transition: background-color .3s ease;
+    display: inline-block; /* Убирает отступы у ссылки */
+}
+
+.menu-item__last a:hover {
+    background-color: var(--green);
+}
+
+
+
+
+.menu-pag {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Дополнительный отступ сверху, если требуется */
+}
+
+.menu-pag a {
+    text-decoration: none;
+}
+
+.back, .next {
+    background-color: var(--black);
+    border-radius: 15px;
+    color: var(--text-white);
+    height: 55px;
+    width: 55px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s; /* Добавлено: плавное изменение цвета */
+}
+
+.back span, .next span {
+    font-size: 46px;
+    font-weight: 100;
+    color: var(--text-white);
+}
+
+.page {
+    background-color: rgba(255, 138, 0, 0.1);
+    color: var(--orange); /* Цвет текста страницы */
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    margin: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета */
+}
+
+.page a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: inherit; /* Наследуем цвет текста от родительского элемента (.page) */
+}
+
+.page:hover,
+.page.active {
+    background-color: var(--orange); /* Цвет фона при наведении и активной странице */
+    color: var(--text-white); /* Цвет текста при наведении и активной странице */
+}
+
+
+.page span {
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disabled {
+    pointer-events: none; /* Отключение кликабельности для отключенных кнопок */
+    /* opacity: 0.1; Полупрозрачность для отключенных кнопок */
+}

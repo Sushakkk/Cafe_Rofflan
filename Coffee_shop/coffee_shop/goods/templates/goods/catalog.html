@@ -5,6 +5,11 @@
 
 
 {% block body %}
+
+
+<body>
+    
+
 <!-- MENU -->
 <section class="menu" id="section-menu">
 
@@ -15,91 +20,101 @@
 
     
 
+        
 
+        {% comment %} Категории class="checked"{% endcomment %}
 
-        {% comment %} Категории {% endcomment %}
         <div class="menu-buttons">
-             <a class="checked" href="#">All catagory</a>
             {% tag_categories as categories %}
             {% for category in categories  %}
-            <a href="{% url "catalog:index" category.slug %}">{{category.name}}</a>
+                {% if category.slug == slug_url %}
+                    <a class="checked" href="{% url "catalog:index" category.slug %}">{{category.name}}</a>
+                {% else %}
+                    <a href="{% url "catalog:index" category.slug %}">{{category.name}}</a>
+                {% endif %}
             {% endfor %}
         </div>
+        
+
 
 
 
 
         <div class="menu-items">
-
-
             {% for dish in goods %}
-        <!-- Карта товара -->
-        <div class="menu-item">
-            <div>
-
-
-
-                    {% if dish.image %}
-                    <img  src="{{ dish.image.url }}"  alt="{{ dish.name }}">
-                {% else %}
-                    <img src="{% static "deps/images/Not found image.png" %}"  alt="...">
-                {% endif %}
-
-               
-
-
-                
-                <div class="card-body">
-                    
+                <!-- Карта товара -->
+                <div class="menu-item">
                     <a href="{% url "catalog:dish" dish.slug %}">
-                        <p class="card-title">{{ dish.name }}</p>
+                        {% if dish.image %}
+                            <img src="{{ dish.image.url }}" alt="{{ dish.name }}">
+                        {% else %}
+                            <img src="{% static "deps/images/Not found image.png" %}" alt="...">
+                        {% endif %}
                     </a>
-                    <p class="card-text">{{ dish.description }}</p>
-                    <p class="product_id">id: {{ dish.display_id }}</p>
-                    <div class="menu-item__last">
-                            <p><strong>{{ dish.price }} $</strong></p>
-
-                        <a href="#" class="btn add-to-cart">
-                            <img class="mx-1" src="{% static "deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
-                                width="32" height="32">
+                    <div class="card-body">
+                        <a href="{% url "catalog:dish" dish.slug %}" style="text-decoration: none;">
+                            <b><p id="card_name">{{ dish.name }}</p></b>
                         </a>
+                        <p id="card-title">{{ dish.description }}</p>
+                        <div class="menu-item__last">
+                            <p><b> Цена: {{ dish.price }} $</b></p>
+                            <a href="#" class="btn add-to-cart">
+                                Добавить +
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {% endfor %}
         </div>
+        
+        
 
 
-    {% endfor %}
 
 
 
         
 
-        </div>
-
-        <div class="menu-pag">
-
-            <a class="back" href="#">
-                <span><</span>
-            </a>
-
-            <a class="page" href="#">
-                <span>1</span>
-            </a>
-            <a class="page" href="#"><span>2</span></a>
-            <a class="page" href="#"><span>3</span></a>
-
-            <a class="dot" href="#"><span>...</span></a>
-
-            <a class="next" href="#"><span>></span></a>
-
-        </div>
-
     </div>
+
+
+
+    <!-- Пагинация -->
+
+    <div class="menu-pag">
+       
+            <li class="back {% if not goods.has_previous %}disabled{% endif %}">
+                <a href="{% if goods.has_previous %}?page={{ goods.previous_page_number }}{% else %}#{% endif %}">
+                    <span><</span>
+                </a>
+            </li>
+    
+            {% for page in goods.paginator.page_range %}
+                {% if page >= goods.number|add:-2 and page <= goods.number|add:2 %}
+                    <li class="page {% if goods.number == page %}active{% endif %}">
+                        <a href="?page={{ page }}">
+                            <span>{{ page }}</span>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+    
+            <li class="next {% if not goods.has_next %}disabled{% endif %}">
+                <a href="{% if goods.has_next %}?page={{ goods.next_page_number }}{% else %}#{% endif %}">
+                    <span>></span>
+                </a>
+            </li>
+    
+    </div>
+    
 
 </section>
 
-</body> 
+
+
+<script src="{% static 'goods/js/script.js' %}"></script>
+</body>
+
 {% endblock body %}
 
 

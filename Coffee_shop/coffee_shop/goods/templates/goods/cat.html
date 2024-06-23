@@ -1,0 +1,112 @@
+{% extends "main/base_main.html" %}
+{% load static %}
+
+{% load goods_tags  %}
+
+
+{% block body %}
+<!-- MENU -->
+{% comment "" %}{% endcomment %}<section class="menu" id="section-menu">
+
+    <div class="container">
+
+        <h2>Our popular menu</h2>
+
+
+    
+
+
+
+        {% comment %} Категории {% endcomment %}
+        <div class="menu-buttons">
+             <a class="checked" href="#">All catagory</a>
+            {% tag_categories as categories %}
+            {% for category in categories  %}
+            <a href="{% url "catalog:index" category.slug %}">{{category.name}}</a>
+            {% endfor %}
+        </div>
+
+
+
+
+        <div class="menu-items">
+
+
+            {% for dish in goods %}
+        <!-- Карта товара -->
+        <div class="menu-item">
+            <div>
+
+
+
+                    {% if dish.image %}
+                    <img  src="{{ dish.image.url }}"  alt="{{ dish.name }}">
+                {% else %}
+                    <img src="{% static "deps/images/Not found image.png" %}"  alt="...">
+                {% endif %}
+
+               
+
+
+                
+                <div class="card-body">
+                    
+                    <a href="{% url "catalog:dish" dish.slug %}">
+                        <p class="card-title">{{ dish.name }}</p>
+                    </a>
+                    <p class="card-text">{{ dish.description }}</p>
+                    <p class="product_id">id: {{ dish.display_id }}</p>
+                    <div class="menu-item__last">
+                            <p><strong>{{ dish.price }} $</strong></p>
+
+                        <a href="#" class="btn add-to-cart">
+                            <img class="mx-1" src="{% static "deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
+                                width="32" height="32">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% endfor %}
+
+
+
+        
+
+        </div>
+
+        <div class="menu-pag">
+
+            <a class="back" href="#">
+                <span><</span>
+            </a>
+
+            <a class="page" href="#">
+                <span>1</span>
+            </a>
+            <a class="page" href="#"><span>2</span></a>
+            <a class="page" href="#"><span>3</span></a>
+
+            <a class="dot" href="#"><span>...</span></a>
+
+            <a class="next" href="#"><span>></span></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body> 
+{% endblock body %}
+
+
+{% comment %} {% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
+    </div>
+</footer>
+{% endblock  %} {% endcomment %}
