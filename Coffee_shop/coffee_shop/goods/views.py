@@ -22,7 +22,7 @@ def catalog(request, category_slug=None):
    
    
     # сколько на страницу карточек 
-    paginator = Paginator(goods,1)
+    paginator = Paginator(goods,6)
     current_page=paginator.page(page)
     
     
@@ -43,9 +43,4 @@ def dish(request, dish_slug):
     }
     
     return render(request, 'goods/dish.html', context)
-
-
-
-
-
 

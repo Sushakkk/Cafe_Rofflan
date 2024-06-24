@@ -1,11 +1,30 @@
 :root {
-    --black: #311F09;
-    --orange: #FF8A00;
-    --green: #3FA72F;
+    --black: #faf7f4;
+    --orange: #eb84e8;
+    --green: #c8008c;
     --white-orange: #FFE6C9;
-    --size_cart: 26px
+    --size_cart: 26px;
+    --blue: #110f65;
 }
 
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
 
 
 body, html {
@@ -14,7 +33,9 @@ body, html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: var(--blue); /* Задаем фоновый цвет для всего документа */
 }
+
 
 * {
     box-sizing: border-box;
@@ -25,17 +46,20 @@ h1, h2, h3, h4, p {
     padding: 0;
 }
 
-.container {
-    max-width: 1237px;
-    margin: 0px auto;
-}
+
+
+
+
+
 
 
 /* HEADER */
 
 header {
-    margin-top: 51px;
+    margin: 50px 0;
+   
 }
+
 
 .header-content {
     display: flex;
@@ -92,17 +116,48 @@ nav a.checked {
 
 /* MAIN */
 
+
+
 main {
-    margin-top: 166px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.main-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Чёрный цвет с прозрачностью 0.5 */
+}
+
+.container {
+    position: relative;
+    max-width: 1237px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1; /* Устанавливаем z-index, чтобы контент был над затемнением */
+}
+
+
+
 
 .main-content {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-}
+    align-items: center; 
+    /* text-align: center; /* Центрируем текст внутри .main-content */
+} */
 
-.main-content_about {
+/* .main-content_about {
     color: var(--orange);
     background-color: var(--white-orange);
     padding: 10px 34px;
@@ -110,7 +165,7 @@ main {
     display: inline-block;
 
     margin-bottom: 22px;
-}
+} */
 
 .main-content h1 {
     color: var(--black);
@@ -159,6 +214,13 @@ main {
 .main-content__buttons a:hover {
     transform: scale(1.05);
 }
+
+
+
+
+
+
+
 
 
 /* WELCOME */
