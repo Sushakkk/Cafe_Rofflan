@@ -1,0 +1,279 @@
+:root {
+    --black: #faf7f4;
+    --orange: #eb84e8;
+    --green: #c8008c;
+    --white-orange: #FFE6C9;
+    --size_cart: 26px;
+    --blue: #110f65;
+}
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+body, html {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: var(--blue); /* Задаем фоновый цвет для всего документа */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/* HEADER */
+
+header {
+    margin: 50px 0;
+   
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content__last {
+    align-items: center;
+    display: flex;
+}
+
+.header-content__last img {
+    margin-right: 25px;
+}
+
+.header-content__last a:last-of-type {
+    background-color: var(--green);
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 34px;
+    border-radius: 133px;
+
+    transition: background-color .4s ease;
+}
+
+.header-content__last a:last-of-type:hover {
+    background-color: var(--orange);
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 45px;
+    color: var(--black);
+    display: inline-block;
+
+    transition: all .4s ease;
+}
+
+nav a:hover {
+    color: var(--green);
+    transform: scale(1.05);
+}
+
+nav a:last-of-type {
+    margin-right: 0;
+}
+
+nav a.checked {
+    color: var(--orange);
+}
+
+
+
+/* MAIN */
+
+
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Чёрный цвет с прозрачностью 0.5 */
+}
+
+.container {
+    position: relative;
+    max-width: 1237px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1; /* Устанавливаем z-index, чтобы контент был над затемнением */
+}
+
+
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* text-align: center; /* Центрируем текст внутри .main-content */
+} */
+
+/* .main-content_about {
+    color: var(--orange);
+    background-color: var(--white-orange);
+    padding: 10px 34px;
+    border-radius: 126px;
+    display: inline-block;
+
+    margin-bottom: 22px;
+} */
+
+.main-content h1 {
+    color: var(--black);
+    font-size: 80px;
+    font-family: "Raleway", sans-serif;
+    line-height: 110%;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+.main-content p {
+    line-height: 200%;
+    margin-bottom: 77px;
+    color: var(--black);
+}
+
+.main-content__buttons a:first-of-type {
+    padding: 17px 62px;
+    background-color: var(--orange);
+    border-radius: 162px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 23px;
+    display: inline-block;
+
+    transition: transform .4s ease;
+}
+
+.main-content__buttons a:last-of-type {
+    padding: 17px 55px;
+    background-color: var(--green);
+    border-radius: 162px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 23px;
+
+    transition: transform .4s ease;
+    display: inline-block;
+}
+
+.main-content__buttons a:hover {
+    transform: scale(1.05);
+}
+
+.main-content__buttons a:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+/* WELCOME */
+
+.welcome {
+    background-color: rgba(63, 198, 110, 0.1);
+    padding-top: 147px;
+    padding-bottom: 132px;
+}
+
+.welcome-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-inner h2 {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    line-height: 110%;
+    font-size: 80px;
+    margin-bottom: 60px;
+
+    color: var(--black);
+}
+
+.welcome-inner h2 span {
+    color: var(--orange);
+} 
+
+.welcome-inner p {
+    color: #5C4529;
+    line-height: 200%;
+    margin-bottom: 122px;
+}
+
+.welcome-inner a {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 17px 45px;
+    border-radius: 162px;
+    text-decoration: none;
+    display: inline-block;
+
+    transition: transform .3s ease;
+}
+
+.welcome-inner a:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* .............................................. */
