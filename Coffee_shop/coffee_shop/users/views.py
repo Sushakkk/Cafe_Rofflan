@@ -3,6 +3,8 @@ from django.shortcuts import render, HttpResponseRedirect
 from users.forms import LoginForm, RegistrationForm, ProfileForm
 from django.contrib import auth, messages
 from django.urls import reverse
+from baskets.templatetags.baskets_tags import user_baskets
+from baskets.models import Baskets
 
 
 # Create your views here.
@@ -17,7 +19,8 @@ def login(request):
                 auth.login(request, user)
                 messages.success(request, f"{username}, Вы вошли в аккаунт")
 
-                if request.POST.get('next', None):
+                redirect_page = request.POST.get('next', None)
+                if redirect_page and redirect_page != reverse('user:logout'):
                     return HttpResponseRedirect(request.POST.get('next'))
 
                 return HttpResponseRedirect(reverse("main:index"))
@@ -64,6 +67,7 @@ def profile(request):
         'title': 'Home - Профиль',
         'form': form
     }
+    user_baskets(context, request)
     return render(request, 'users/profile.html', context)
 
 
@@ -72,3 +76,9 @@ def logout(request):
     messages.success(request, f"{request.user.username}, Вы вышли из аккаунта")
     auth.logout(request)
     return HttpResponseRedirect(reverse("main:index"))
+
+
+def users_basket(request):
+    context = {}
+    user_baskets(context, request)
+    return render(request, 'users/users_basket.html', context)

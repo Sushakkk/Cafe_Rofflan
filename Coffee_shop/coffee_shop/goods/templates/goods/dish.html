@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block modal_basket % }
+{% include "includes/basket_button.html"%}
+{% endblock %}
+
 {% block content %}
 <div class="container mt-5">
     <div class="card mb-4 custom-shadow">
@@ -35,7 +39,10 @@
         <div class="card-body">
             <h5 class="card-title">{{ dish.name }}</h5>
             <p class="card-text">{{ dish.description }}</p>
-            <a href="#" class="btn btn-dark add-to-cart">Добавить в корзину</a>
+            <a href="{% url baskets:basket_add  %}" class="btn btn-dark add-to-cart"
+                data-dish-id="{{ dish.id }}">
+                {% csrf_token %}
+                Добавить в корзину</a>
         </div>
     </div>
 </div>

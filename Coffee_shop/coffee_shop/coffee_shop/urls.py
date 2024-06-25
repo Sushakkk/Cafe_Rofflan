@@ -29,6 +29,7 @@ urlpatterns = [
     path('catalog/', include('goods.urls', namespace='catalog')),
     path('user/', include('users.urls', namespace='user')),
     path('__debug__/', include('debug_toolbar.urls')),
+    path('basket/', include('baskets.urls', namespace="basket")),
 ]
 
 
