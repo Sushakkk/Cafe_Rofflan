@@ -13,8 +13,10 @@ def index(request):
         'title': 'Home - Главная',
         'content': "Магазин мебели HOME",
     }
+
     user_baskets(context, request)
     return render(request, 'main/index.html', context)
+
 
 
 def about(request):
@@ -23,5 +25,16 @@ def about(request):
         'content': "О нас",
         'text_on_page': "Текст о том почему этот магазин такой классный, и какой хороший товар."
     }
+
     user_baskets(context, request)
     return render(request, 'main/about.html', context)
+
+
+
+
+
+def main_page(request):
+    return render(request, 'main/main.html')
+
+
+

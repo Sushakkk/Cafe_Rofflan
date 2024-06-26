@@ -6,12 +6,20 @@
     <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
 {% endblock %}
 
+
 {% block modal_basket %}
 {% include "includes/basket_button.html"%}
 {% endblock %}
 
+
 {% block content %}
     <h1 class="mt-5 pt-5"><strong>{{ content }}</strong></h1>
+    <a  style="font-size: 24px;" href="{% url 'main:main_page' %}">Тестовая страница</a>
+    
+    <a href="{% url "catalog:index"  %}">
+        Menu
+    </a>
+    <!-- Используем 'main:main_page', который соответствует 'main/urls.py' -->
 {% endblock %}
 
 {% block footer %}
