@@ -3,6 +3,9 @@ from django.shortcuts import render, HttpResponseRedirect
 from users.forms import LoginForm, RegistrationForm, ProfileForm
 from django.contrib import auth, messages
 from django.urls import reverse
+from baskets.templatetags.baskets_tags import user_baskets
+from baskets.models import Baskets
+
 
 
 # Create your views here.
@@ -13,11 +16,16 @@ def login(request):
             username = request.POST["username"]
             password = request.POST["password"]
             user = auth.authenticate(username=username, password=password)
+            session_key = request.session.session_key
             if user:
                 auth.login(request, user)
                 messages.success(request, f"{username}, Вы вошли в аккаунт")
 
-                if request.POST.get('next', None):
+                if session_key:
+                        Baskets.objects.filter(session_key=session_key).update(user=user)
+
+                redirect_page = request.POST.get('next', None)
+                if redirect_page and redirect_page != reverse('user:logout'):
                     return HttpResponseRedirect(request.POST.get('next'))
 
                 return HttpResponseRedirect(reverse("main:index"))
@@ -36,8 +44,11 @@ def registration(request):
         form = RegistrationForm(data=request.POST)
         if form.is_valid():
             form.save()
+            session_key = request.session.session_key
             user = form.instance
             auth.login(request, user)
+            if session_key:
+                Baskets.objects.filter(session_key=session_key).update(user=user)
             messages.success(request, f"{user.username}, Вы успешно зарегистрированы и вошли в аккаунт")
             return HttpResponseRedirect(reverse("main:index"))
     else:
@@ -64,6 +75,7 @@ def profile(request):
         'title': 'Home - Профиль',
         'form': form
     }
+    user_baskets(context, request)
     return render(request, 'users/profile.html', context)
 
 
@@ -72,3 +84,9 @@ def logout(request):
     messages.success(request, f"{request.user.username}, Вы вышли из аккаунта")
     auth.logout(request)
     return HttpResponseRedirect(reverse("main:index"))
+
+
+def users_basket(request):
+    context = {}
+    user_baskets(context, request)
+    return render(request, 'users/users_basket.html', context)

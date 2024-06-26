@@ -36,3 +36,6 @@ class Dishes(models.Model):
     
     def display_id(self):
         return f"{self.id:05}"
+
+    def sell_price(self):
+        return self.price

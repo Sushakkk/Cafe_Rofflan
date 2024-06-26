@@ -2,3 +2,5 @@
 .vscode
 .idea
 db.sqlite3
+coffee_shop/__pycache__
+main/__pycache__
