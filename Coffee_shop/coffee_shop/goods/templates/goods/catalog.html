@@ -83,7 +83,7 @@
                             <p><strong>{{ dish.price }} $</strong></p>
                         {% comment %} {% endif %} {% endcomment %}
 
-                        <a href="{% url 'baskets:basket_add'  %}" class="btn add-to-basket"
+                        <a href="{% url 'baskets:basket_add' %}" class="btn add-to-basket"
                         data-dish-id="{{ dish.id }}">
                             {% csrf_token %}
                             <img class="mx-1" src="{% static "deps/icons/cart-plus.svg" %}" alt="Catalog Icon"

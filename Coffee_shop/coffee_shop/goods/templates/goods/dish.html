@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block modal_basket % }
+{% block modal_basket %}
 {% include "includes/basket_button.html"%}
 {% endblock %}
 
@@ -39,7 +39,7 @@
         <div class="card-body">
             <h5 class="card-title">{{ dish.name }}</h5>
             <p class="card-text">{{ dish.description }}</p>
-            <a href="{% url baskets:basket_add  %}" class="btn btn-dark add-to-cart"
+            <a href="{% url 'baskets:basket_add'  %}" class="add-to-basket"
                 data-dish-id="{{ dish.id }}">
                 {% csrf_token %}
                 Добавить в корзину</a>
