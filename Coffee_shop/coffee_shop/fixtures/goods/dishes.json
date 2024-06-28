@@ -3,24 +3,130 @@
     "model": "goods.dishes",
     "pk": 1,
     "fields": {
-      "name": "Вензель с малиной",
-      "slug": "venzel-s-malinoj",
-      "description": "очень вкусно",
-      "image": "goods_images/a1bc8f3db8dc27e46c489090afa51fef-680x500_F9B9B2y.jpeg",
-      "price": "175.00",
-      "category": 1
+      "name": "Яичница с беконом",
+      "slug": "yaichnica-s-bekonom",
+      "description": "Классическая яичница, приготовленная с ароматным беконом.",
+      "image": "goods_images/Meat_products_Tomatoes_Ham_Wood_planks_Fried_egg_522252_2048x1152.jpg",
+      "price": "250.00",
+      "quantity": 0,
+      "category": 3
     }
   },
   {
     "model": "goods.dishes",
     "pk": 2,
     "fields": {
-      "name": "Муравейник",
-      "slug": "muravejnik",
-      "description": "вау вау вау",
-      "image": "goods_images/334746_1.jpg",
-      "price": "110.00",
-      "category": 2
+      "name": "Шакшука",
+      "slug": "shakshuka",
+      "description": "Традиционное блюдо из яиц, приготовленных в соусе из томатов, перца и лука.",
+      "image": "goods_images/e90d26356bcaf7ad868f49e14965f980.jpeg",
+      "price": "299.00",
+      "quantity": 0,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 3,
+    "fields": {
+      "name": "Омлет",
+      "slug": "omlet",
+      "description": "Пышный омлет, приготовленный с добавлением свежих овощей и зелени.",
+      "image": "goods_images/IMG_0756.0823d7e08c7863522c4b3643c0d0230f.jpg",
+      "price": "250.00",
+      "quantity": 0,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 4,
+    "fields": {
+      "name": "Блины с творогом",
+      "slug": "bliny-s-tvorogom",
+      "description": "Тонкие блины с нежным творожным наполнителем.",
+      "image": "goods_images/blinchiki-smetana-tvorog-ruletiki.jpg",
+      "price": "300.00",
+      "quantity": 0,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 5,
+    "fields": {
+      "name": "Блины со сгущенкой",
+      "slug": "bliny-so-sgushenkoj",
+      "description": "Вкусные блины, поданные с сладкой сгущенкой.",
+      "image": "goods_images/blinciki-so-sgusennym-molokom-777.jpg",
+      "price": "300.00",
+      "quantity": 3,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 6,
+    "fields": {
+      "name": "Рисовая каша",
+      "slug": "risovaya-kasha",
+      "description": "Сытная рисовая каша с добавлением молока и сахара.",
+      "image": "goods_images/021020_sandutsa_071.jpg",
+      "price": "170.00",
+      "quantity": 0,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 7,
+    "fields": {
+      "name": "Овсяная каша",
+      "slug": "ovsyanaya-kasha",
+      "description": "Классическая овсяная каша с добавлением свежих ягод и мёда.",
+      "image": "goods_images/1703135263_mykaleidoscope-ru-p-ovsyanka-kasha-instagram-18.jpg",
+      "price": "170.00",
+      "quantity": 0,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 8,
+    "fields": {
+      "name": "Панкейки",
+      "slug": "pankejki",
+      "description": "Американские панкейки, поданные с кленовым сиропом и свежими ягодами.",
+      "image": "goods_images/0973aa5f79762550f5fccb02427d07e1.jpeg",
+      "price": "350.00",
+      "quantity": 0,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 9,
+    "fields": {
+      "name": "Вареники с вишней",
+      "slug": "vareniki-s-vishnej",
+      "description": "Домашние вареники с сочной вишней.",
+      "image": "goods_images/1676431533_gagaru-club-p-samie-krasivie-vareniki-krasivo-2.jpg",
+      "price": "350.00",
+      "quantity": 0,
+      "category": 3
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 10,
+    "fields": {
+      "name": "Сырники",
+      "slug": "syrniki",
+      "description": "Классические сырники, приготовленные из свежего творога.",
+      "image": "goods_images/1703259476_mykaleidoscope-ru-p-prostie-sirniki-oboi-1.jpg",
+      "price": "290.00",
+      "quantity": 0,
+      "category": 3
     }
   }
 ]

@@ -1,0 +1,35 @@
+.menu {
+    min-height: 600px;
+    padding: 165px 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text); */
+    text-align: center;
+    background-color: var(--blue);
+    background-size: cover;
+
+}
+
+
+/* 
+.button {
+    background-color: #FF7400;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 700;
+
+    transition: background-color 0.2s linear;
+}
+
+
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+} */
+
+
+

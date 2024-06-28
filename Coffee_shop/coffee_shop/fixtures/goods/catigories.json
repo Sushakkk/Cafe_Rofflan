@@ -1,12 +1,37 @@
 [
   {
     "model": "goods.categories",
-    "pk": 1,
+    "pk": 2,
+    "fields": { "name": "Все категории", "slug": "all" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 3,
+    "fields": { "name": "Завтраки и закуски", "slug": "zavtraki-i-zakuski" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 4,
+    "fields": { "name": "Пироги", "slug": "pirogi" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 5,
+    "fields": { "name": "Пирожные", "slug": "pirozhnye" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 6,
     "fields": { "name": "Выпечка", "slug": "vypechka" }
   },
   {
     "model": "goods.categories",
-    "pk": 2,
-    "fields": { "name": "Пирожные", "slug": "pirozhnye" }
+    "pk": 7,
+    "fields": { "name": "Торты", "slug": "torty" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 8,
+    "fields": { "name": "Напитки", "slug": "napitki" }
   }
 ]

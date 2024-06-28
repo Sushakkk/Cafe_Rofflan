@@ -3,43 +3,30 @@
 
 {% load static %}
 
-<<<<<<< HEAD
-{% block modal_basket %}
-{% include "includes/basket_button.html"%}
-{% endblock %}
-
-{% block content %}
-<div class="row">
-    <!-- Форма фильтров -->
-    <div class="dropdown mb-2">
-        <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Фильтры
-        </button>
-
-        <form action="{% if request.GET.q %}{% url "catalog:search" %}{% else %}{% url "catalog:index" slug_url %}{% endif %}" method="get" class="dropdown-menu bg-dark" data-bs-theme="dark">
-            <div class="form-check text-white mx-3">
-                <input class="form-check-input" type="checkbox" name="on_sale" id="flexCheckDefault" value="on" {% if request.GET.on_sale == 'on' %}checked{% endif %}>
-                {% if request.GET.q %}
-                    <input type="hidden" name="q" value="{{ request.GET.q }}">
-                {% endif %}
-=======
 {% load goods_tags  %}
->>>>>>> origin
 
+
+
+{% block bootstrap %}
+
+  
+   <link rel="stylesheet" href="{% static 'goods/style/modal.css' %}"> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+   <link rel="stylesheet" href="{% static 'goods/style/main.css' %}"> 
+
+{% endblock bootstrap %}
 
 {% block body %}
 
 
-<body>
+
     
 
 <!-- MENU -->
 <section class="menu" id="section-menu">
-
     <div class="container">
 
-        <h2>Our popular menu</h2>
+        <h2 class="title">Our popular menu</h2>
 
 
     
@@ -86,7 +73,7 @@
                     </a>
 
                         <div class="menu-item__last">
-                            <p><b> Цена: {{ dish.price }} $</b></p>
+                            <p><b> Цена: {{ dish.price }} р</b></p>
                             <a href="#" class="btn add-to-cart">
                                 +
                             </a>
@@ -98,40 +85,6 @@
     </div>
 
 
-
-
-    {% for dish in goods %}
-        <!-- Карта товара -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                {% if dish.image %}
-                    <img src="{{ dish.image.url }}" class="card-img-top" alt="{{ dish.name }}">
-                {% else %}
-                    <img src="{% static "deps/images/Not found image.png" %}" class="card-img-top" alt="...">
-                {% endif %}
-                <div class="card-body">
-                    
-                    <a href="{% url "catalog:dish" dish.slug %}">
-                        <p class="card-title">{{ dish.name }}</p>
-                    </a>
-                    {% comment %} <p class="card-text ">{{ dish.description| truncatechars: 14 }}</p> {% endcomment %}
-                    <p class="card-text ">{{ dish.description }}</p>
-                    <p class="dish_id">id: {{ dish.display_id }}</p>
-                    <div class="d-flex justify-content-between">
-
-                        {% comment %} {% if dish.discount %}
-                            <p><s>{{dish.price}}</s> $</p>
-                            <p><strong>{{ dish.sell_price }} $</strong></p>
-                            <span class="badge bg-warning text-dark">Скидка {{ dish.discount }} %</span>
-                        {% else %} {% endcomment %}
-                            <p><strong>{{ dish.price }} $</strong></p>
-                        {% comment %} {% endif %} {% endcomment %}
-
-                        <a href="{% url 'baskets:basket_add' %}" class="btn add-to-basket"
-                        data-dish-id="{{ dish.id }}">
-                            {% csrf_token %}
-                            <img class="mx-1" src="{% static "deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
-                                width="32" height="32">
 
     <!-- Пагинация -->
 
@@ -145,12 +98,13 @@
     
             {% for page in goods.paginator.page_range %}
                 {% if page >= goods.number|add:-2 and page <= goods.number|add:2 %}
+                <a class="pag" href="?page={{ page }}">
                     <li class="page {% if goods.number == page %}active{% endif %}">
                         <a href="?page={{ page }}">
                             <span>{{ page }}</span>
-
                         </a>
                     </li>
+                </a>
                 {% endif %}
             {% endfor %}
     
@@ -236,7 +190,7 @@
 
 
 
-</body>
+
 
 {% endblock body %}
 
