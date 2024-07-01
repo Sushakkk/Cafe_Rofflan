@@ -128,5 +128,214 @@
       "quantity": 0,
       "category": 3
     }
+  },
+  
+  {
+    "model": "goods.dishes",
+    "pk": 11,
+    "fields": {
+      "name": "Медовик",
+      "slug": "medovik",
+      "description": "",
+      "image": "goods_images/1647716304_30-amiel-club-p-medovik-kartinki-30.jpg",
+      "price": "150.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 12,
+    "fields": {
+      "name": "Полено",
+      "slug": "poleno",
+      "description": "",
+      "image": "goods_images/1645007941_80-klublady-ru-p-tort-poleno-foto-83.jpg",
+      "price": "300.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 13,
+    "fields": {
+      "name": "Шоколадный",
+      "slug": "shokoladnyj",
+      "description": "",
+      "image": "goods_images/1644702296_8-balthazar-club-p-kusok-shokoladnogo-torta-12.jpg",
+      "price": "230.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 14,
+    "fields": {
+      "name": "Наполеон",
+      "slug": "napoleon",
+      "description": "",
+      "image": "goods_images/1583412579_4-p-deserti-napoleon-6-1536x1018.jpg",
+      "price": "180.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 15,
+    "fields": {
+      "name": "Чизкейк",
+      "slug": "chizkejk",
+      "description": "",
+      "image": "goods_images/1676285752_balthazar-club-p-chizkeik-kholodnii-desert-krasivo-39.jpg",
+      "price": "180.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 16,
+    "fields": {
+      "name": "Морковный",
+      "slug": "morkovnyj",
+      "description": "",
+      "image": "goods_images/1684786942_mykaleidoscope-ru-p-olga-shobutinskaya-morkovnii-tort-krasivo-63.jpg",
+      "price": "200.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 17,
+    "fields": {
+      "name": "Сникерс",
+      "slug": "snikers",
+      "description": "",
+      "image": "goods_images/1674538779_balthazar-club-p-tort-snikers-bez-vipechki-pinterest-73.jpg",
+      "price": "330.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 18,
+    "fields": {
+      "name": "Москва",
+      "slug": "moskva",
+      "description": "",
+      "image": "goods_images/scale_1200.png",
+      "price": "350.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 19,
+    "fields": {
+      "name": "Сметанный",
+      "slug": "smetannyj",
+      "description": "",
+      "image": "goods_images/smetannik-retsept06.jpg",
+      "price": "170.00",
+      "quantity": 0,
+      "category": 7
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 20,
+    "fields": {
+      "name": "Треугольник",
+      "slug": "treugolnik",
+      "description": "",
+      "image": "goods_images/1-10.jpg",
+      "price": "110.00",
+      "quantity": 0,
+      "category": 4
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 21,
+    "fields": {
+      "name": "Курник",
+      "slug": "kurnik",
+      "description": "",
+      "image": "goods_images/1675547464_balthazar-club-p-kurnik-pirog-iz-sloenogo-testa-instagram-3.jpg",
+      "price": "220.00",
+      "quantity": 0,
+      "category": 4
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 22,
+    "fields": {
+      "name": "Пирог с яйцом и луком",
+      "slug": "pirog-s-yajcom-i-lukom",
+      "description": "",
+      "image": "goods_images/pirog-s-luk-i-yayc.jpg",
+      "price": "220.00",
+      "quantity": 0,
+      "category": 4
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 23,
+    "fields": {
+      "name": "Пирог с мясом",
+      "slug": "pirog-s-myasom",
+      "description": "",
+      "image": "goods_images/dd6910a6eb323b213c797f2c55d7a4f3.jpg",
+      "price": "250.00",
+      "quantity": 0,
+      "category": 4
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 24,
+    "fields": {
+      "name": "Шарлотка",
+      "slug": "sharlotka",
+      "description": "",
+      "image": "goods_images/ricetta-torta-di-mele.jpg",
+      "price": "200.00",
+      "quantity": 0,
+      "category": 4
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 25,
+    "fields": {
+      "name": "Пирог с брусникой",
+      "slug": "pirog-s-brusnikoj",
+      "description": "",
+      "image": "goods_images/c7bdd76d95655b6ba1d428542e41b63b.jpg",
+      "price": "200.00",
+      "quantity": 0,
+      "category": 4
+    }
+  },
+  {
+    "model": "goods.dishes",
+    "pk": 26,
+    "fields": {
+      "name": "Пирог с капустой",
+      "slug": "pirog-s-kapustoj",
+      "description": "",
+      "image": "goods_images/3.jpg",
+      "price": "220.00",
+      "quantity": 0,
+      "category": 4
+    }
   }
 ]

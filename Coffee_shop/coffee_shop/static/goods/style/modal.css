@@ -15,10 +15,22 @@
 
 .descr{
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 18px;
     margin-right: 10px;
+}
+
+#modal-dish-description{
+    color:black;
 }
 
 .line{
     display: inline-block;
+}
+
+
+
+#modal-dish-name{
+    font-size: 28px;
+    text-align: center;
+    color: var(--dark_pink);
 }
