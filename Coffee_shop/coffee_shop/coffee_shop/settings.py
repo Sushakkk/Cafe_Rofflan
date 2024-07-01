@@ -125,7 +125,8 @@ STATIC_URL = '/static/'
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',  # Общая директория
+    BASE_DIR / 'static',  # Общая директорияpython manage.py dumpdata goods.Categories --output fixtures/goods/categories.json
+
 ]
 
 
