@@ -31,7 +31,7 @@ urlpatterns = [
 
     path('__debug__/', include('debug_toolbar.urls')),
     path('basket/', include('baskets.urls', namespace="basket")),
-
+    path('order/', include('orders.urls', namespace="order")),
 
 ]
 
