@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% load static %}
-{% load baskets_tags &}
+{% load baskets_tags %}
 {% block content %}
 
  <div class="row">
@@ -14,8 +14,8 @@
                     {% include "baskets/includes/included_basket.html" %}
                     <!-- Закончилась разметка корзины -->
                 </div>
-                {% if baskets %}
-                    <a class="btn btn-dark" href="orders/create_order.html">
+                {% if user_baskets and not orders%}
+                    <a class="btn btn-dark" href="{% url "orders:create_order" %}">
                         Оформить заказ
                     </a>
                 {% endif %}

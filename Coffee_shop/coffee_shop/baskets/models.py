@@ -7,11 +7,11 @@ from goods.models import Dishes
 
 class BasketQuerySet(models.QuerySet):
     def total_price(self) -> int:
-        return sum(Baskets.dish_price() for basket in self)
+        return sum(basket.dish_price() for basket in self)
 
     def total_quantity(self):
         if self:
-            return sum(Baskets.quantity for basket in self)
+            return sum(basket.quantity for basket in self)
 
         return 0
 
@@ -30,7 +30,9 @@ class Baskets(models.Model):
         ordering = ("id",)
 
     def dishes_price(self):
-        return round(self.dish.sell_price() * self.quantity, 2)
+        return round(self.dish.price * self.quantity, 2)
+
+    objects = BasketQuerySet().as_manager()
 
     def __str__(self):
         if self.user:
