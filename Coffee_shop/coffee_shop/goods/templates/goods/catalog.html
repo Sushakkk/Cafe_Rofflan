@@ -7,6 +7,12 @@
 
 
 
+
+
+
+
+
+
 {% block bootstrap %}
 <link rel="stylesheet" href="{% static 'goods/style/modal.css' %}">
 
@@ -14,6 +20,8 @@
    <link rel="stylesheet" href="{% static 'goods/style/main.css' %}"> 
 
 {% endblock bootstrap %}
+
+
 
 {% block body %}
 
@@ -26,11 +34,9 @@
     <div class="container">
 
         <h2 class="title">Our popular menu</h2>
-
-
-    
-
-        
+        {% block modal_basket %}
+    {% include "includes/basket_button.html"%}
+    {% endblock %}
 
         {% comment %} Категории class="checked"{% endcomment %}
 
@@ -40,7 +46,7 @@
                 {% if category.slug == slug_url %}
                     <a class="checked" href="{% url "menu:catalog" category.slug %}">{{category.name}}</a>
                 {% else %}
-                    <a href="{% url "menu:catalog" category.slug %}">{{category.name}}</a>>
+                    <a href="{% url "menu:catalog" category.slug %}">{{category.name}}</a>
                 {% endif %}
             {% endfor %}
         </div>
