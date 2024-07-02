@@ -1,0 +1,18 @@
+
+.basket {
+    min-height: 600px;
+        height: 100vh;
+        padding: 195px 0;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        color: var(--text);
+        text-align: center;
+      
+        background-color: var(--blue);
+        
+        background-size: cover;
+        background-position: center;
+}
