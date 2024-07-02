@@ -1,12 +1,113 @@
-{% extends "base.html" %}
+
 {% load static %}
+ <link rel="stylesheet" href="{% static 'users/style/login_registration.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
 
-{% block modal_basket %}
-{% include "includes/basket_button.html"%}
-{% endblock %}
+<div class="container" id="container">
+        <div class="form-container sign-up-container" >
+            <form action="{% url "user:registration" %}" method="post">
+                <h1>Регистрация</h1>
+                {% csrf_token %}
+                <input type="text" class="form-control" id="id_first_name"
+                       value="{% if form_r.first_name.value %}{{ form_r.first_name.value }}{% endif %}"
+                       name="first_name"
+                       placeholder="Введите ваше имя" required>
+                    {% if form_r.first_name.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.first_name.errors}}</div>
+                    {% endif %}
+                <input type="text" class="form-control" id="id_last_name"
+                       value="{% if form_r.last_name.value %}{{ form_r.last_name.value }}{% endif %}"
+                       name="last_name"
+                       placeholder="Введите вашу фамилию" required>
+                    {% if form.last_name.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.last_name.errors}}</div>
+                    {% endif %}
+                <input type="text" class="form-control" id="id_username"
+                       value="{% if form_r.username.value %}{{ form_r.username.value }}{% endif %}"
+                       name="username"
+                       placeholder="Введите ваше имя пользователя" required>
+                    {% if form_r.username.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.username.errors}}</div>
+                    {% endif %}
+                <input type="email" class="form-control" id="id_email"
+                       value="{% if form_r.email.value %}{{ form_r.email.value }}{% endif %}"
+                       name="email"
+                       placeholder="Введите ваш email" required>
+                    {% if form_r.email.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.email.errors}}</div>
+                    {% endif %}
+                <input type="text" class="form-control" id="id_phone"
+                       value="{% if form_r.phone.value %}{{ form_r.phone.value }}{% endif %}"
+                       name="phone"
+                       placeholder="Введите телефон" required>
+                    {% if form_r.phone.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.phone.errors}}</div>
+                    {% endif %}
+                <input type="password" class="form-control" id="id_password1"
+                       value="{% if form_r.password1.value %}{{ form_r.password1.value }}{% endif %}"
+                       name="password1"
+                       placeholder="Введите пароль" required>
+                    {% if form_r.password1.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.password1.errors}}</div>
+                    {% endif %}
+                <input type="password" class="form-control" id="id_password2"
+                       value="{% if form_r.password2.value %}{{ form_r.password2.value }}{% endif %}"
+                       name="password2"
+                       placeholder="Подтвердите пароль" required>
+                    {% if form_r.password2.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.password2.errors}}</div>
+                    {% endif %}
+                    
+                <button type="submit"> Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="{% url "user:login" %}" method="post">
+                <h1>Вход</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>используйте ваш логин и пароль</span>
+                {% csrf_token %}
+                    {% if request.GET.next %}
+                       <input type="hidden" name="next" value={{request.GET.next}}>
+                    {% endif %}
+                
+                    <input type="text" class="form-control"
+                           value="{% if form.username.value %}{{form.username.value}}{% endif %}"
+                           name="username" id="id_username"
+                           placeholder="Введите ваше имя пользователя" required>
+                           <input type="password" class="form-control"
+                           name="password" id="id_password"
+                           placeholder="Введите ваш пароль" required>
+                <a href="#"></a>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Привет, Друг!</h1>
+                    <p>Введи персональные данные и стань нашем гостем </p>
+                    <button  class="ghost" id="signUp">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src={% static 'users/js/script.js' %}></script> 
+    
 
-{% block content %}
-     <div class="row">
+
+<!-- <div class="row">
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-6 bg-white p-4 mb-4 mx-3 rounded custom-shadow">
@@ -31,22 +132,6 @@
                                     placeholder="Введите ваш пароль" required>
 
                         </div>
-<!--                              {% for item in form %}-->
-<!--                            <div class="mb-3">-->
-<!--                            <label for="{{ item.id_for_label }}" class="form-label">{{item.label}}</label>-->
-<!--                            {{item}}-->
-<!--                        </div>-->
-<!--                        {% endfor %}-->
-
-<!--                    {{ form }}-->
-<!--                        <div class="mb-3">-->
-<!--                            <label for="{{ form.username.id_for_label }}" class="form-label">Имя пользователя</label>-->
-<!--                            {{form.username}}-->
-<!--                        </div>-->
-<!--                        <div class="mb-3">-->
-<!--                            <label for="{{ form.password.id_for_label }}" class="form-label">Пароль</label>-->
-<!--                            {{form.password}}-->
-<!--                        </div>-->
 
                         <button type="submit" class="btn btn-dark btn-block">Войти</button>
                     </form>
@@ -72,6 +157,4 @@
                 </div>
             </div>
         </div>
-    </div>
-
-{% endblock %}
+    </div> -->

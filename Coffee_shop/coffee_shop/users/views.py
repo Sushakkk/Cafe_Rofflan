@@ -57,9 +57,9 @@ def registration(request):
 
     context = {
         'title': 'Home - Регистрация',
-        'form': form
+        'form_r': form
     }
-    return render(request, 'users/registration.html', context)
+    return render(request, 'users/login.html', context)
 
 
 @login_required

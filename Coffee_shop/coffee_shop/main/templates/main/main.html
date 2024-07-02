@@ -1,4 +1,4 @@
-{% extends "main/base_main.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 
@@ -12,7 +12,7 @@
         <h2 class="welcome__heading  animate__animated animate__fadeInUp">Cafe Rofflan</h2>
 
         <div class="welcome__links">
-          <a href="{% url "catalog:index" category_slug="all" %}" class="link-primary animate__animated animate__fadeInLeft">Меню</a>
+          <a href="{% url "menu:catalog" category_slug="all" %}" class="link-primary animate__animated animate__fadeInLeft">Меню</a>
           <a href="#about-us" class="link animate__animated animate__fadeInRight ">О нас</a>
         </div>
       </div>
