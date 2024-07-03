@@ -3,34 +3,30 @@
 
 {% user_baskets request as baskets %}
 <div>
-    <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton"
-        aria-expanded="false">
-        <img class="mx-1" src="{% static "deps/icons/basket2-fill.svg" %}" alt="Catalog Icon" width="24"
-            height="24">
+    <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton" aria-expanded="false">
+        <img class="mx-1" src="{% static "deps/icons/basket2-fill.svg" %}" alt="Catalog Icon" width="24" height="24">
         <span id="goods-in-basket-count">{{ total_quantity }}</span>
     </button>
 </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <h3 class="text-center mb-4">Корзина</h3>
-                                <div class="container" id="basket-items-container">
-                                    <!-- Разметка корзины -->
-                                     {% include "baskets/includes/included_basket.html" %}
-                                    <!-- Закончилась разметка корзины -->
-                                </div>
-                                {% if user_baskets and not orders%}
-                                <a class="btn btn-dark" href="{% url "orders:create_order" %}">
-                                    Оформить заказ
-                                </a>
-                            {% endif %}
-                            </div>
-                        </div>
-                    </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center mb-4">Корзина</h3>
+                <div class="container" id="basket-items-container">
+                    <!-- Разметка корзины -->
+                    {% include "baskets/includes/included_basket.html" %}
+                    <!-- Закончилась разметка корзины -->
                 </div>
+                {% if user_baskets and not orders %}
+                <a  class="order" href="{% url "orders:create_order" %}">
+                    Оформить заказ
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

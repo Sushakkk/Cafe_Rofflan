@@ -23,6 +23,17 @@
 }
 
 
+.btn-dark{
+    background-color: var(--blue);
+    border: 1px solid var(--text);
+}
+
+.btn-dark:hover {
+    background-color: var(--blue);
+    border: 1px solid var(--text);
+    transform: scale(1.05); /* Увеличение размера на 10% при наведении */
+}
+
 
 
 .menu-buttons {
@@ -30,6 +41,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 60px 0;
+    flex-wrap: wrap;
 
    
 }
@@ -118,6 +130,7 @@
     display: flex;
     justify-content: space-around; /* Распределяет пространство между элементами */
     align-items: center; /* Вертикальное выравнивание по центру */
+    flex-wrap: wrap;
 }
 
 .menu-item__last p {
@@ -142,7 +155,9 @@
 }
 
 
-
+#price{
+    white-space: nowrap;
+}
 
 .menu-pag {
     display: flex;

@@ -8,7 +8,6 @@
         justify-content: center;
         align-items: center;
       
-        color: var(--text);
         text-align: center;
       
         background-color: var(--blue);
@@ -16,3 +15,181 @@
         background-size: cover;
         background-position: center;
 }
+
+
+
+
+/* .modal-basket p{
+    color: black;
+} */
+
+/* Основной контейнер корзины */
+.modal-basket {
+    padding: 20px;
+}
+
+/* Карточка товара в корзине */
+.card.mb-3 {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Заголовок карточки */
+.card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Список элементов корзины */
+.list-group-item {
+    border: none;
+    padding: 10px;
+}
+
+/* Элемент корзины */
+.basket-item {
+    display: flex;
+    align-items: center; /* Выравнивание элементов по центру */
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* Изображение товара */
+.basket-item-image {
+    flex: 0 0 150px; /* Ширина фиксированного размера */
+    margin-right: 20px;
+}
+
+.basket-item-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Детали товара (количество и цена) */
+.basket-item-details {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Распределение элементов по горизонтали */
+}
+
+
+
+
+/* Кнопки изменения количества */
+.input-group .basket-btn {
+    height: 30px;/* Наследуем высоту от родителя */
+    min-width: 30px; /* Минимальная ширина кнопок */
+    width: 30px;
+    margin: 0 15px;
+    
+}
+
+/* Кнопка удаления товара */
+.remove-from-basket {
+    color: var(--primary-color);
+}
+
+/* Футер карточки */
+.card-footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.input-group  {
+   display: flex;
+   flex-wrap: nowrap;
+   position: relative;
+   align-items: stretch;
+   width: 75%;
+
+}
+
+
+.input-group .form-control.number {
+    height: 30px;
+    text-align: center; /* Выравнивание текста по центру */
+    margin-left: 15px !important;
+    margin-right: 15px;
+    max-width: 100px;
+    border-radius: 10px;
+    min-width: 50px;
+
+}
+
+.basket-item-details .btn {
+    height: 30px;
+    width: 30px; /* Задайте нужную ширину */
+    display: flex;
+    color: var(--text);
+    transition: all .4s ease;
+    border-radius: 10px;
+   
+    justify-content: center;
+    padding: 0;
+    font-size: 20px; /* Размер текста для центрирования символов */
+}
+
+.basket-item-actions {
+    margin-left: auto; /* Push actions to the right */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.delete-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    margin-left: 15px; /* Add margin for spacing */
+}
+
+
+.float-left{
+    color:black
+}
+
+
+.order{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    border-radius: 162px;
+    transition: border-color 0.1s, background-color 0.1s;
+    background-color: rgba(2, 1, 40, 0.656);
+    color: var(--text);
+    transition: all .4s ease;
+    margin-top: 40px;
+
+}
+.order:hover {
+    transform: scale(1.05); /* Увеличение размера на 10% при наведении */
+  }
+  
+
+.text-card{
+    margin: 0 30px;
+    white-space: nowrap;
+    color: black;
+}
+.text-card.light{
+
+    color: var(--text);
+}
+
+/* #increment{
+    margin-right: 90px;
+
+} */
+
