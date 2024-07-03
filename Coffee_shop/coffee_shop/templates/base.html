@@ -13,6 +13,7 @@
      {% block bootstrap %}{% endblock bootstrap %}
 
      <link rel="stylesheet" href="{% static 'basket/style/style.css' %}"> 
+     <link rel="stylesheet" href="{% static 'orders/style/style.css' %}"> 
     
    
     <link rel="stylesheet" href="{% static 'goods/style/style.css' %}"> 
@@ -45,12 +46,19 @@
       <nav class="header__nav">
         <ul>
             <li><a class="home" href="{% url 'main:index' %}">Home</a></li>
+            <li><a class="about"href="{% url "menu:catalog" category_slug="all" %}">Меню</a></li>
+            
             {% comment %} <li><a class="about"href="#about-us">О нас</a></li> {% endcomment %}
+
+            
+            {% if request.path == '/' %}
             <li><a class="about"href="#address">Адрес</a></li>
-            <li><a class="about"href="{% url "users:users-basket" %}">Корзина</a></li>
+        {% endif %}
+            
             {% if not user.is_authenticated %}  
                 </li><a href="{% url "users:login" %}"  class="link-primary">Войти</a></li>
             {% else %}
+            <li><a class="about"href="{% url "users:users-basket" %}">Корзина</a></li>
                 <li><a class="link-primary" href="{% url "users:profile" %}">Личный кабинет</a></li>
                 <li><a class="link-primary" href="{% url "users:logout" %}">Выйти</a></li>
             {% endif %}   

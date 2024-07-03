@@ -1,0 +1,46 @@
+
+.order-main {
+    min-height: 600px;
+        height: 100vh;
+        padding: 155px 0;
+      
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      
+        text-align: center;
+      
+        background-color: var(--blue);
+        
+        background-size: cover;
+        background-position: center;
+      
+}
+
+.modal-basket{
+    margin-bottom: 40px;
+}
+
+.details{
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    color: var(--text);
+    line-height: 2.5;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 20px;
+    margin: 0 30px;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: var(--text);
+    margin-left: 10px;
+    resize:horizontal;
+    min-width: 240px;
+    
+
+}

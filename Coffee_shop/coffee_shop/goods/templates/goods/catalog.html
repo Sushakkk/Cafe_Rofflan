@@ -10,7 +10,9 @@
 
 
 
+{% block header %}
 
+{% endblock header %}
 
 
 {% block bootstrap %}
@@ -33,7 +35,7 @@
 <section class="menu" id="section-menu">
     <div class="container">
 
-        <h2 class="title">Our popular menu</h2>
+        <h2 class="title">Наше Меню</h2>
         {% block modal_basket %}
     {% include "includes/basket_button.html"%}
     {% endblock %}
@@ -78,7 +80,7 @@
                     </a>
 
                         <div class="menu-item__last">
-                            <p><b> Цена: {{ dish.price }} р</b></p>
+                            <p id="price"><b> Цена: {{ dish.price }} р</b></p>
                             <a href="{% url 'baskets:basket_add' %}" class="btn add-to-basket"
                             data-dish-id="{{ dish.id }}">
                             {% csrf_token %}   +

@@ -17,7 +17,7 @@
                     <!-- Закончилась разметка корзины -->
                 </div>
                 {% if user_baskets and not orders%}
-                    <a class="btn btn-dark" href="{% url "orders:create_order" %}">
+                    <a  class="order" href="{% url "orders:create_order" %}">
                         Оформить заказ
                     </a>
                 {% endif %}
@@ -27,3 +27,17 @@
 </div>
 </section>
 {% endblock body %}
+
+{% block extra_scripts %}
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const containers = document.querySelectorAll('.text-card');
+        
+        containers.forEach(container => {
+            container.classList.add('light');
+        });
+    });
+    
+    
+   </script>
+    {% endblock %}
