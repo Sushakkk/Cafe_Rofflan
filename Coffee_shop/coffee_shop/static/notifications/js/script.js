@@ -34,6 +34,6 @@ closeIcon.addEventListener("click", () => {
     });
 }
 });
-$(document).ready(function() {
-  $('#phone').mask('+7 (000) 000-0000');
-});
+// $(document).ready(function() {
+//   $('#phone').mask('+7 (000) 000-0000');
+// });
