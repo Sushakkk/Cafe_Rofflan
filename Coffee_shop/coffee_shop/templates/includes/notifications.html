@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %}
 
 {% if form.non_field_errors %}
     <div class="container mt-4">
@@ -35,4 +35,49 @@
             {% endif %}
         </div>
     </div>
+</div> -->
+{% load static %}
+<link rel="stylesheet" href="{% static 'notifications/style/style.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+{% if form_r.non_field_errors %}
+<div class="toast" id="message" >
+    <div class="toast-content">
+         <i class="fas fa-solid fa-check check"></i>
+         <div class="message">
+             <span class="text text-1">Warning</span>
+             <span class="text text-2" id="message">{{form.non_field_errors}}</span>
+         </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+    <div class="progress"></div>
 </div>
+{% endif %}
+{% if messages %}
+            <div class="toast" id="message" >
+               <div class="toast-content">
+                    {% for message in messages %}
+                    {% if message.tags == 'success' %}
+                    <i class="fas fa-solid fa-check check"></i>
+                    <div class="message">
+                        <span class="text text-1">Success</span>
+                        <span class="text text-2" id="message">{{ message }}</span>
+                    </div>
+                    {% endif %}
+                    {% if message.tags == 'warning' %}
+                    <i class="fas fa-solid fa-check check"></i>
+                    <div class="message">
+                        <span class="text text-1">Warnning</span>
+                        <span class="text text-2" id="message">{{ message }}</span>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                 <i class="fa-solid fa-xmark close"></i>
+                <div class="progress"></div>
+            </div>
+    
+   
+{% endif %}
+<!-- <button>Show Toast</button> -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src={% static 'notifications/js/script.js' %}></script>

@@ -21,7 +21,7 @@
                     {% include "baskets/includes/included_basket.html" %}
                     <!-- Закончилась разметка корзины -->
                 </div>
-                {% if user_baskets and not orders %}
+                {% if baskets and not orders %}
                 <a  class="order" href="{% url "orders:create_order" %}">
                     Оформить заказ
                 </a>
