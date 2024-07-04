@@ -1,7 +1,6 @@
 
 .basket {
     min-height: 600px;
-        height: 100vh;
         padding: 195px 0;
       
         display: flex;
@@ -28,6 +27,12 @@
     padding: 20px;
 }
 
+
+
+.modal-body{
+    background-color: var(--blue);
+}
+
 /* Карточка товара в корзине */
 .card.mb-3 {
     border: 1px solid #ccc;
@@ -40,13 +45,14 @@
     background-color: #f0f0f0;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 
 /* Список элементов корзины */
 .list-group-item {
     border: none;
     padding: 10px;
+    background-color: var(--blue);
 }
 
 /* Элемент корзины */
@@ -102,7 +108,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 
 
@@ -122,7 +128,7 @@
     margin-left: 15px !important;
     margin-right: 15px;
     max-width: 100px;
-    border-radius: 10px;
+    border-radius: 10px !important;
     min-width: 50px;
 
 }
@@ -133,7 +139,7 @@
     display: flex;
     color: var(--text);
     transition: all .4s ease;
-    border-radius: 10px;
+    border-radius: 10px !important;
    
     justify-content: center;
     padding: 0;
@@ -171,6 +177,7 @@
     color: var(--text);
     transition: all .4s ease;
     margin-top: 40px;
+    text-align: center;
 
 }
 .order:hover {
@@ -181,7 +188,7 @@
 .text-card{
     margin: 0 30px;
     white-space: nowrap;
-    color: black;
+    color: var(--text);
 }
 .text-card.light{
 
@@ -193,3 +200,19 @@
 
 } */
 
+
+.card-title{
+    color:black;
+}
+
+
+
+.title-basket{
+    text-align: center;
+    color:  #d033a1;
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
