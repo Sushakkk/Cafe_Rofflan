@@ -6,7 +6,7 @@
 <section class="order-main" id="basket-main">
     <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
         <div class="container">
-            <h3 class="title">Выбранные товары</h3>
+            <h3 class="title-basket">Выбранные товары</h3>
             <div class="container" id="basket-items-container">
                 <!-- Разметка корзины -->
                 {% include "baskets/includes/included_basket.html" %}
@@ -15,7 +15,7 @@
         </div>
         <!-- Детали заказа -->
         <div class="container">
-            <h3 class="title" style="margin-bottom: 30px;">Детали заказа</h3>
+            <h3 class="title-basket" style="margin-bottom: 30px;">Детали заказа</h3>
             <div class="details">
                 <div class="row">
                     <div class="col-md-6">
@@ -111,14 +111,6 @@
         input.dispatchEvent(new Event('input'));
     });
 
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const containers = document.querySelectorAll('.text-card');
-        
-        containers.forEach(container => {
-            container.classList.add('light');
-        });
-    });
 </script>
 {% endblock %}
 

@@ -69,14 +69,11 @@ p {
 .header {
   padding: 10px 0;
   width: 100%;
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-
-
-  background-color:  var(--blue);
+  background-color: var(--blue);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -84,6 +81,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -91,42 +90,19 @@ p {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--dark_pink);
-  /* font-weight: bold; */
 }
 
 .header__nav ul {
   display: flex;
-
-  align-items: center; /* Выравнивание элементов по вертикали */
-  list-style-type: none; /* Убираем маркеры у списка */
-  padding: 0;
-}
-
-.header__nav li + li {
-  margin-left: 40px;
-}
-
-
-
-
-
-
-/* Стили для навигационного меню в header */
-.header__nav {
-  padding: 10px;
-}
-
-.header__nav ul {
-  display: flex;
-  align-items: center; /* Выравнивание элементов по вертикали */
-  list-style-type: none; /* Убираем маркеры у списка */
+  align-items: center;
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-wrap: nowrap; /* Запрещаем перенос элементов на новую строку */
+  flex-wrap: nowrap;
 }
 
 .header__nav li {
-  margin-left: 20px; /* Уменьшен отступ между элементами списка */
+  margin-left: 20px;
 }
 
 .header__nav a {
@@ -135,13 +111,13 @@ p {
   white-space: nowrap;
   text-decoration: none;
   display: block;
-  padding: 10px; /* Пространство вокруг текста для лучшего щелчка */
-  transition: all 0.4s ease; /* Плавный переход при изменении свойств */
+  padding: 10px;
+  transition: all 0.4s ease;
 }
 
 .header__nav a:hover {
   color: var(--light_pink);
-  transform: scale(1.1); /* Увеличение размера текста при наведении */
+  transform: scale(1.1);
 }
 
 .header__nav a:active {
@@ -155,10 +131,10 @@ p {
 
 .header__nav .link-primary {
   font-size: 18px;
-  margin-left: 32px;
   text-transform: none;
   padding: 11px 26px;
-  color:var(--text) !important;
+  color: var(--text) !important;
+  margin-left: 10px;
 }
 
 .header__nav .link-primary:hover {
@@ -168,44 +144,8 @@ p {
 /* Медиа-запросы для уменьшения текста и отступов при уменьшении экрана */
 @media (max-width: 1024px) {
   .header__nav a {
-    font-size: 18px;
+    font-size: 16px;
     padding: 8px;
-  }
-
-  .header__nav .home {
-    font-size: 22px;
-  }
-
-  .header__nav .link-primary {
-    font-size: 16px;
-    padding: 9px 20px;
-  }
-
-  .header__nav li {
-    margin-left: 15px;
-  }
-  .tabs__item {
-    justify-content: flex-start;
-    flex-direction: column;
-}
-iframe{
-  margin-bottom: 50px;
-  width: 100%;
-  margin-right: 20px;
-
-}
-.text-map {
-
-
-  margin-left: -30px;
-
-}
-}
-
-@media (max-width: 768px) {
-  .header__nav a {
-    font-size: 16px;
-    padding: 6px;
   }
 
   .header__nav .home {
@@ -214,37 +154,91 @@ iframe{
 
   .header__nav .link-primary {
     font-size: 14px;
-    padding: 8px 18px;
+    padding: 8px 20px;
   }
 
   .header__nav li {
     margin-left: 10px;
   }
+
   .tabs__item {
     justify-content: flex-start;
     flex-direction: column;
-}
-iframe{
-  margin-bottom: 50px;
-  width: 100%;
-  margin-right: 20px;
+  }
 
-}
-.text-map {
+  iframe {
+    margin-bottom: 50px;
+    width: 100%;
+    margin-right: 20px;
+  }
 
-  margin-left: -30px;
-
+  .text-map {
+    margin-left: -30px;
+  }
 }
+
+@media (max-width: 768px) {
+  .header__nav a {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .header__nav .home {
+    font-size: 18px;
+  }
+
+  .header__nav .link-primary {
+    font-size: 12px;
+    padding: 6px 9px;
+    margin: 0;
+  }
+
+  .header__nav li {
+    margin-left: 5px;
+  }
+
+  .tabs__item {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  iframe {
+    margin-bottom: 50px;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .text-map {
+    margin-left: -30px;
+  }
+
+  /* Перенос кнопок на новую строку */
+  .header__container {
+    flex-wrap: wrap;
+  }
+
+  .header__nav .link-primary {
+    margin-top: 5px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 480px) {
+  .header__container {
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
   .header__nav {
-    padding: 1px;
+    padding: 5px 0;
   }
 
   .header__nav a {
     font-size: 12px;
-    padding: 1px;
+    padding: 4px;
   }
 
   .header__nav .home {
@@ -252,37 +246,92 @@ iframe{
   }
 
   .header__nav .link-primary {
-    font-size: 12px;
-    padding: 6px 6px;
-    margin-left: 6px;
+    font-size: 10px;
+    padding: 4px 8px;
+    margin-left: 0;
+    margin-top: 5px;
   }
 
   .header__nav li {
-    margin-left: 5px;
-  }
-
-  .logo {
-    font-size: 8px;
+    margin-left: 2px;
   }
 
   .tabs__item {
     justify-content: flex-start;
     flex-direction: column;
-}
-iframe{
-  margin-bottom: 50px;
-  width: 100%;
-  margin-right: 20px;
+  }
 
-}
-.text-map {
+  iframe {
+    margin-bottom: 50px;
+    width: 100%;
+    margin-right: 20px;
+  }
 
-  width: 100px;
-  margin-left: -30px;
-
+  .text-map {
+    width: 100px;
+    margin-left: -30px;
+  }
 }
-}
 
+@media (max-width: 410px) {
+  .header__container {
+    padding: 0 5px;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .header__nav {
+    width: 80%; /* Уменьшаем ширину навигации */
+    padding: 3px 0;
+  }
+
+  .header__nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__nav li {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .header__nav a {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  .header__nav .home {
+    font-size: 12px;
+  }
+
+  .header__nav .link-primary {
+    font-size: 8px;
+    padding: 2px 4px;
+    margin-top: 5px;
+    display: block; /* Перенос кнопок на новую строку */
+    
+  }
+
+  .tabs__item {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  iframe {
+    margin-bottom: 50px;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .text-map {
+    width: 100px;
+    margin-left: -30px;
+  }
+}
 
 
 
@@ -325,7 +374,6 @@ iframe{
 
 .welcome__links > * + * {
   margin-left: 20px;
-  
 }
 
 .link-primary {
@@ -338,7 +386,7 @@ iframe{
 
   background-color: var(--dark_pink);
 
-  transition:all .4s ease !important;
+  transition:all .4s ease;
   border-radius: 162px;
 
 
@@ -365,10 +413,11 @@ iframe{
   text-transform: uppercase;
   border: 1px solid #FFFFFF;
   border-radius: 162px;
-  transition: border-color 0.1s, background-color 0.1s ;
+  transition: border-color 0.1s, background-color 0.1s;
   background-color: rgba(2, 1, 40, 0.656);
   color: var(--text);
-  transition:all .4s ease !important;
+  transition:all .4s ease;
+  
 
 
 
@@ -379,9 +428,11 @@ iframe{
 .link:hover {
   /* background-color: rgb(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.5); */
+  
+
   color: var(--blue);
   background-color: rgba(255, 255, 255, 0.627); 
-  transform: scale(1.05); /* Увеличение размера на 10% при наведении */
+  
   
 
 
@@ -807,7 +858,6 @@ iframe{
     font-size: 24px;
   }
 }
-
 
 
 
