@@ -21,8 +21,10 @@
                     {% include "baskets/includes/included_basket.html" %}
                     <!-- Закончилась разметка корзины -->
                 </div>
+
                 {% if user_baskets and not orders %}
                 <div style=" text-align: center; margin: 20px 0;"><a  class="order"  style=" margin: 0 0;" href="{% url "orders:create_order" %}">
+
                     Оформить заказ
                 </a></div>
                 {% endif %}

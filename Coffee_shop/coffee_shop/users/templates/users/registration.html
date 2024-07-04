@@ -1,13 +1,84 @@
-{% extends "base.html" %}
+
 {% load static %}
 
 {% block modal_basket %}
 {% include "includes/basket_button.html"%}
 {% endblock %}
-
-{% block content %}
-
-<div class="row">
+<link rel="stylesheet" href="{% static 'users/style/login_registration.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+    
+<div class="container" id="container">
+        <div class="form-container sign-up-container" >
+            <form action="{% url "user:registration" %}" method="post">
+                <h1>Регистрация</h1>
+                {% csrf_token %}
+                <input type="text" class="form-control" id="id_first_name"
+                       value="{% if form_r.first_name.value %}{{ form_r.first_name.value }}{% endif %}"
+                       name="first_name"
+                       placeholder="Введите ваше имя" required>
+                    {% if form_r.first_name.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.first_name.errors}}</div>
+                    {% endif %}
+                <input type="text" class="form-control" id="id_last_name"
+                       value="{% if form_r.last_name.value %}{{ form_r.last_name.value }}{% endif %}"
+                       name="last_name"
+                       placeholder="Введите вашу фамилию" required>
+                    {% if form.last_name.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.last_name.errors}}</div>
+                    {% endif %}
+                <input type="text" class="form-control" id="id_username"
+                       value="{% if form_r.username.value %}{{ form_r.username.value }}{% endif %}"
+                       name="username"
+                       placeholder="Введите ваше имя пользователя" required>
+                    {% if form_r.username.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.username.errors}}</div>
+                    {% endif %}
+                <input type="email" class="form-control" id="id_email"
+                       value="{% if form_r.email.value %}{{ form_r.email.value }}{% endif %}"
+                       name="email"
+                       placeholder="Введите ваш email" required>
+                    {% if form_r.email.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.email.errors}}</div>
+                    {% endif %}
+                <input type="text" class="form-control" id="id_phone"
+                       value="{% if form_r.phone.value %}{{ form_r.phone.value }}{% endif %}"
+                       name="phone"
+                       placeholder="Введите телефон" required>
+                    {% if form_r.phone.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.phone.errors}}</div>
+                    {% endif %}
+                <input type="password" class="form-control" id="id_password1"
+                       value="{% if form_r.password1.value %}{{ form_r.password1.value }}{% endif %}"
+                       name="password1"
+                       placeholder="Введите пароль" required>
+                    {% if form_r.password1.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.password1.errors}}</div>
+                    {% endif %}
+                <input type="password" class="form-control" id="id_password2"
+                       value="{% if form_r.password2.value %}{{ form_r.password2.value }}{% endif %}"
+                       name="password2"
+                       placeholder="Подтвердите пароль" required>
+                    {% if form_r.password2.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form_r.password2.errors}}</div>
+                    {% endif %}
+                    
+                <button type="submit"> Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Рады видеть вас снова!</h1>
+                    <p>Уже зарегистрированы?</p>
+                    <button class="ghost" id="signIn">Войти</button>
+                </div>
+            </div>
+        </div>
+</div>
+<script src={% static 'users/js/script.js' %}></script> 
+<!-- <div class="row">
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-9 bg-white p-4 mb-5 mx-2 rounded custom-shadow">
@@ -89,14 +160,16 @@
                     <button type="submit"
                         class="btn btn-dark btn-block">Зарегистрироваться</button>
                 </form>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+
 <!--            <script>-->
 <!--                        $(document).ready(function(){-->
 
 <!--                            Inputmask({"mask": "+7 (999) 999-9999"}).mask("#id_phone");-->
 <!--                        });-->
 <!--    </script>-->
-            </div>
-        </div>
-    </div>
-</div>
-{% endblock %}
+
