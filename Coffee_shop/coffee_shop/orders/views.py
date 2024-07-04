@@ -31,28 +31,28 @@ def create_order(request):
                             payment_on_get=form.cleaned_data['payment_on_get'],
                         )
 
-                    for basket_item in basket_items:
-                        dish=basket_item.dish
-                        name=basket_item.dish.name
-                        price=basket_item.dish.sell_price()
-                        quantity=basket_item.quantity
+                        for basket_item in basket_items:
+                            dish=basket_item.dish
+                            name=basket_item.dish.name
+                            price=basket_item.dish.sell_price()
+                            quantity=basket_item.quantity
                     
-                    if dish.quantity < quantity:
-                        raise ValidationError( f'Недостаточное количество товара {name} на складе. В наличии - {dish.quantity}' )
+                            if dish.quantity < quantity:
+                                raise ValidationError( f'Недостаточное количество товара {name} на складе. В наличии - {dish.quantity}' )
 
-                    OrderItem.objects.create(
-                            order=order,
-                            dish=dish,
-                            name=name,
-                            price=price,
-                            quantity=quantity,
-                    )
-                    dish.quantity -= quantity
-                    dish.save()
+                            OrderItem.objects.create(
+                                    order=order,
+                                    dish=dish,
+                                    name=name,
+                                    price=price,
+                                    quantity=quantity,
+                            )
+                            dish.quantity -= quantity
+                            dish.save()
                 
-                basket_items.delete()
-                messages.success(request, "Заказ оформлен!")
-                return redirect("users:profile")
+                        basket_items.delete()
+                        messages.success(request, "Заказ оформлен!")
+                        return redirect("users:profile")
 
 
             except ValidationError as e:

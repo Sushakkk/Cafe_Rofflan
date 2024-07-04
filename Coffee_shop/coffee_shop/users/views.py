@@ -30,6 +30,8 @@ def login(request):
                     return HttpResponseRedirect(request.POST.get('next'))
 
                 return HttpResponseRedirect(reverse("main:index"))
+          
+                
     else:
         form = LoginForm()
 
