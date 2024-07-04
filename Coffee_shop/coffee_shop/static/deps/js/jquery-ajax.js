@@ -2,7 +2,7 @@
 $(document).ready(function () 
 {
     // берем в переменную элемент разметки с id jq-notification для оповещений от ajax
-    var successMessage = $("#jq-notification");
+    var successMessage = $("#message");
 
      // Ловим собыитие клика по кнопке добавить в корзину
      $(document).on("click", ".add-to-basket", function (e) {
@@ -30,12 +30,13 @@ $(document).ready(function ()
              },
              success: function (data) {
                  // Сообщение
+                 
                  successMessage.html(data.message);
-                 successMessage.fadeIn(400);
-                 // Через 7сек убираем сообщение
-                 setTimeout(function () {
-                     successMessage.fadeOut(400);
-                 }, 7000);
+                //  successMessage.fadeIn(400);
+                // //  Через 7сек убираем сообщение
+                //  setTimeout(function () {
+                //      successMessage.fadeOut(400);
+                //  }, 7000);
             
 
                  // Увеличиваем количество товаров в корзине (отрисовка в шаблоне)
@@ -183,13 +184,13 @@ $(document).ready(function ()
 });
 
 // Берем из разметки элемент по id - оповещения от django
-var notification = $('#notification');
-// И через 7 сек. убираем
-if (notification.length > 0) {
-    setTimeout(function () {
-        notification.alert('close');
-    }, 7000);
-}
+// var notification = $('#notification');
+// // И через 7 сек. убираем
+// if (notification.length > 0) {
+//     setTimeout(function () {
+//         notification.alert('close');
+//     }, 7000);
+// }
 // При клике по значку корзины открываем всплывающее(модальное) окно
 $('#modalButton').click(function () {
     $('#exampleModal').appendTo('body');
@@ -201,3 +202,35 @@ $('#modalButton').click(function () {
 $('#exampleModal .btn-close').click(function () {
     $('#exampleModal').modal('hide');
 });
+$("input[name='requires_delivery']").change(function () {
+    var selectedValue = $(this).val();
+    // Скрываем или отображаем input ввода адреса доставки
+    if (selectedValue === "1") {
+        $("#deliveryAddressField").show();
+    } else {
+        $("#deliveryAddressField").hide();
+    }
+});
+
+// Форматирования ввода номера телефона в форме +7 (xxx)-xxx-хххx
+document.getElementById('id_phone').addEventListener('input', function (e) {
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = '+7' + (x[2] ? ' (' + x[2] : '') + (x[3] ? ')-' + x[3] : '') + (x[4] ? '-' + x[4] : '');
+});
+
+// Проверяем на стороне клиента коррекность номера телефона в форме xxx-xxx-хх-хx
+// $('#create_order_form').on('submit', function (event) {
+//     var phoneNumber = $('#id_phone').val();
+//     var regex = /^\(\d{3}\)-\d{3}-\d{4}$/;
+
+//     if (!regex.test(phoneNumber)) {
+//         $('#phone_number_error').show();
+//         event.preventDefault();
+//     } else {
+//         $('#phone_number_error').hide();
+
+//         // Очистка номера телефона от скобок и тире перед отправкой формы
+//         var cleanedPhoneNumber = phoneNumber.replace(/[()\-\s]/g, '');
+//         $('#id_phone').val(cleanedPhoneNumber);
+//     }
+// });
