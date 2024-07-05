@@ -11,6 +11,7 @@ from orders.models import Order, OrderItem
 
 # Create your views here.
 def login(request):
+    exception = 'Добро пожаловать'
     if request.method == 'POST':
         form = LoginForm(data=request.POST)
         if form.is_valid():
@@ -30,14 +31,16 @@ def login(request):
                     return HttpResponseRedirect(request.POST.get('next'))
 
                 return HttpResponseRedirect(reverse("main:index"))
-          
+        else:
+            exception = "Неправильный логин или пароль"
+
                 
     else:
         form = LoginForm()
-
     context = {
         'title': 'Home - Авторизация',
-        'form': form
+        'form': form,
+        'exception': exception,
     }
     return render(request, 'users/login.html', context)
 

@@ -1,41 +1,4 @@
-<!-- {% load static %}
 
-{% if form.non_field_errors %}
-    <div class="container mt-4">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="alert alert-danger alert-dismissible fade show custom-shadow" role="alert">
-                    {{form.non_field_errors}}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endif %}
-
-<div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            {% if messages %}
-                {% for message in messages %}
-                    {% if message.tags == 'success' %}
-                    <div id="notification" class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow" role="alert">
-                        {{ message }}
-                    </div>
-                    {% endif %}
-                    {% if message.tags == 'warning' %}
-                    <div id="notification" class="position-fixed start-50 translate-middle-x z-3 alert alert-danger fade show custom-shadow" role="alert">
-                        {{ message }}
-                    </div>
-                    {% endif %}
-                {% endfor %}
-            {% else %}
-            <div id="jq-notification" class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow" style="display: none;" role="alert">
-            </div>
-            {% endif %}
-        </div>
-    </div>
-</div> -->
 {% load static %}
 
 {% if form_r.non_field_errors %}
@@ -70,23 +33,28 @@
                     </div>
                     {% endif %}
                     {% endfor %}
-                </div>
+                 </div>
                  <i class="fa-solid fa-xmark close"></i>
                 <div class="progress"></div>
             </div>
-    {% else %}
-    <div class="toast" id="notification-container">
-        <div class="toast-content">
-            <i class="fas fa-solid fa-check check"></i>
-            <div class="message">
-                <span class="text text-1">Уведомление</span>
-                <span class="text text-2" id="message"></span>
-            </div>
-        </div>
-         <i class="fa-solid fa-xmark close"></i>
-        <div class="progress"></div>
-    </div>
+
 {% endif %}
-<!-- <button>Show Toast</button> -->
+
+
+{% if exception %}
+<div class="toast" id="notification-container" >
+    <div class="toast-content">
+         <i class="fas fa-solid fa-check check"></i>
+         <div class="message">
+             <span class="text text-1">Уведомление</span>
+             <span class="text text-2" id="message">{{ exception }}</span>
+         </div>
+    </div>
+      <i class="fa-solid fa-xmark close"></i>
+     <div class="progress"></div>
+ </div>
+
+{% endif %}
+
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src={% static 'notifications/js/script.js' %}></script>
