@@ -1,22 +1,10 @@
-
 .basket {
     min-height: 600px;
-        padding: 195px 0;
-        min-height: 100vh;
-      
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-        text-align: center;
-      
-        background-color: var(--blue);
-        
-        background-size: cover;
-        background-position: center;
+    padding: 195px 0;
+    text-align: center;
+    background-color: var(--blue);
+    background-size: cover;
 }
-
-
 
 
 /* .modal-basket p{
@@ -59,6 +47,7 @@
 /* Элемент корзины */
 .basket-item {
     display: flex;
+    justify-content: center;
     align-items: center; /* Выравнивание элементов по центру */
     padding: 10px;
     flex-wrap: wrap;
@@ -78,6 +67,7 @@
 
 /* Детали товара (количество и цена) */
 .basket-item-details {
+    margin-top: 10px;
     flex: 1;
     display: flex;
     align-items: flex-start;
@@ -125,14 +115,21 @@
 
 .input-group .form-control.number {
     height: 30px;
-    text-align: center; /* Выравнивание текста по центру */
+    text-align: center;
     margin-left: 15px !important;
     margin-right: 15px;
-    max-width: 100px;
-    border-radius: 10px !important;
-    min-width: 50px;
-
+    max-width: 100px; /* Максимальная ширина для управления адаптацией */
+    min-width: 43px !important; /* Минимальная ширина для уменьшения на маленьких экранах */
 }
+
+
+
+
+
+
+
+
+
 
 .basket-item-details .btn {
     height: 30px;
@@ -147,14 +144,10 @@
     font-size: 20px; /* Размер текста для центрирования символов */
 }
 
-.basket-item-actions {
-    margin-left: auto; /* Push actions to the right */
-    display: flex;
-    align-items: center; /* Center items vertically */
-}
+
 
 .delete-icon {
-    width: 24px; /* Adjust the size as needed */
+    min-width: 24px; /* Adjust the size as needed */
     height: 24px; /* Adjust the size as needed */
     margin-left: 15px; /* Add margin for spacing */
 }
@@ -216,4 +209,106 @@
     line-height: 1.2;
     letter-spacing: 5px;
     text-transform: uppercase;
+}
+
+
+
+@media (max-width: 900px) {
+    .input-group .form-control.number {
+        max-width: 80px; /* Пример уменьшения максимальной ширины на маленьких экранах */
+    }
+    .text-card{
+        margin: 0 15px;
+       
+    }
+    .delete-icon {
+
+        margin-left: 1px;
+    }
+   
+  }
+
+
+
+/* Медиа-запрос для управления стилями при уменьшении экрана */
+@media (max-width: 768px) {
+    .input-group .form-control.number {
+        max-width: 40px; /* Пример уменьшения максимальной ширины на маленьких экранах */
+    }
+    .text-card{
+        margin: 0 15px;
+       
+    }
+    .delete-icon {
+
+        margin-left: 1px;
+    }
+}
+
+/* @media (max-width: 500px) {
+    .input-group .form-control.number {
+        margin: 0 10px;
+    }
+    .basket-item-details .btn {
+        width: 28px;
+        font-size: 15px;
+    }
+} */
+
+
+@media (max-width: 710px) {
+    .input-group{
+        width: auto;
+    }
+    .basket-item {
+        
+        justify-content: space-around;
+       
+    }
+    .basket-item-details {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ширина деталей товара занимает всю доступную ширину */
+        margin-top: 10px; /* Отступ сверху для деталей товара */
+        align-items: center;
+    }
+
+    .basket-item-actions {
+        display: flex;
+        justify-content: center; /* Центрируем действия по горизонтали */
+        margin-top: 10px; /* Отступ сверху для блока с действиями */
+    }
+    .text-card {
+        margin: 15px 0;
+    }
+}
+
+
+@media (max-width: 495px) {
+
+    .basket-item-image {
+        margin-right: 0;
+    }
+    
+    .basket-item {
+        
+        align-items: center;
+       
+    }
+    .basket-item-details {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ширина деталей товара занимает всю доступную ширину */
+        margin-top: 10px; /* Отступ сверху для деталей товара */
+    }
+
+    .basket-item-actions {
+        display: flex;
+        justify-content: center; /* Центрируем действия по горизонтали */
+        margin-top: 10px; /* Отступ сверху для блока с действиями */
+    }
+    .text-card {
+        margin: 15px 0;
+    }
+    
 }

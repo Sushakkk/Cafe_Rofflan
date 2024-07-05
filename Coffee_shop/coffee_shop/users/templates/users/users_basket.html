@@ -6,21 +6,23 @@
 
 
 <section class="basket" id="basket-main">
- <div class="row">
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                <h3 class="title-basket">Корзина</h3>
-                <div class="container" id="basket-items-container">
-                    <!-- Разметка корзины -->
-                    {% include "baskets/includes/included_basket.html" %}
-                    <!-- Закончилась разметка корзины -->
+<div class="container">
+    <div class="row">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
+                    <h3 class="title-basket">Корзина</h3>
+                    <div class="container" id="basket-items-container">
+                        <!-- Разметка корзины -->
+                        {% include "baskets/includes/included_basket.html" %}
+                        <!-- Закончилась разметка корзины -->
+                    </div>
+                    {% if user_baskets and not orders%}
+                        <a  class="order" href="{% url "orders:create_order" %}">
+                            Оформить заказ
+                        </a>
+                    {% endif %}
                 </div>
-                {% if user_baskets and not orders%}
-                    <a  class="order" href="{% url "orders:create_order" %}">
-                        Оформить заказ
-                    </a>
-                {% endif %}
             </div>
         </div>
     </div>

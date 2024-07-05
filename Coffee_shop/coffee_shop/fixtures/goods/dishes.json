@@ -8,7 +8,7 @@
       "description": "Классическая яичница, приготовленная с ароматным беконом.",
       "image": "goods_images/Meat_products_Tomatoes_Ham_Wood_planks_Fried_egg_522252_2048x1152.jpg",
       "price": "250.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -21,7 +21,7 @@
       "description": "Традиционное блюдо из яиц, приготовленных в соусе из томатов, перца и лука.",
       "image": "goods_images/e90d26356bcaf7ad868f49e14965f980.jpeg",
       "price": "299.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -34,7 +34,7 @@
       "description": "Пышный омлет, приготовленный с добавлением свежих овощей и зелени.",
       "image": "goods_images/IMG_0756.0823d7e08c7863522c4b3643c0d0230f.jpg",
       "price": "250.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -47,7 +47,7 @@
       "description": "Тонкие блины с нежным творожным наполнителем.",
       "image": "goods_images/blinchiki-smetana-tvorog-ruletiki.jpg",
       "price": "300.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -73,7 +73,7 @@
       "description": "Сытная рисовая каша с добавлением молока и сахара.",
       "image": "goods_images/021020_sandutsa_071.jpg",
       "price": "170.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -86,7 +86,7 @@
       "description": "Классическая овсяная каша с добавлением свежих ягод и мёда.",
       "image": "goods_images/1703135263_mykaleidoscope-ru-p-ovsyanka-kasha-instagram-18.jpg",
       "price": "170.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -99,7 +99,7 @@
       "description": "Американские панкейки, поданные с кленовым сиропом и свежими ягодами.",
       "image": "goods_images/0973aa5f79762550f5fccb02427d07e1.jpeg",
       "price": "350.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -112,7 +112,7 @@
       "description": "Домашние вареники с сочной вишней.",
       "image": "goods_images/1676431533_gagaru-club-p-samie-krasivie-vareniki-krasivo-2.jpg",
       "price": "350.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -125,7 +125,7 @@
       "description": "Классические сырники, приготовленные из свежего творога.",
       "image": "goods_images/1703259476_mykaleidoscope-ru-p-prostie-sirniki-oboi-1.jpg",
       "price": "290.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -139,7 +139,7 @@
       "description": "",
       "image": "goods_images/1647716304_30-amiel-club-p-medovik-kartinki-30.jpg",
       "price": "150.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -152,7 +152,7 @@
       "description": "",
       "image": "goods_images/1645007941_80-klublady-ru-p-tort-poleno-foto-83.jpg",
       "price": "300.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -165,7 +165,7 @@
       "description": "",
       "image": "goods_images/1644702296_8-balthazar-club-p-kusok-shokoladnogo-torta-12.jpg",
       "price": "230.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -178,7 +178,7 @@
       "description": "",
       "image": "goods_images/1583412579_4-p-deserti-napoleon-6-1536x1018.jpg",
       "price": "180.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -191,7 +191,7 @@
       "description": "",
       "image": "goods_images/1676285752_balthazar-club-p-chizkeik-kholodnii-desert-krasivo-39.jpg",
       "price": "180.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -204,7 +204,7 @@
       "description": "",
       "image": "goods_images/1684786942_mykaleidoscope-ru-p-olga-shobutinskaya-morkovnii-tort-krasivo-63.jpg",
       "price": "200.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -217,7 +217,7 @@
       "description": "",
       "image": "goods_images/1674538779_balthazar-club-p-tort-snikers-bez-vipechki-pinterest-73.jpg",
       "price": "330.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -230,7 +230,7 @@
       "description": "",
       "image": "goods_images/scale_1200.png",
       "price": "350.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -243,7 +243,7 @@
       "description": "",
       "image": "goods_images/smetannik-retsept06.jpg",
       "price": "170.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 7
     }
   },
@@ -256,7 +256,7 @@
       "description": "",
       "image": "goods_images/1-10.jpg",
       "price": "110.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 4
     }
   },
@@ -269,7 +269,7 @@
       "description": "",
       "image": "goods_images/1675547464_balthazar-club-p-kurnik-pirog-iz-sloenogo-testa-instagram-3.jpg",
       "price": "220.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 4
     }
   },
@@ -282,7 +282,7 @@
       "description": "",
       "image": "goods_images/pirog-s-luk-i-yayc.jpg",
       "price": "220.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 4
     }
   },
@@ -295,7 +295,7 @@
       "description": "",
       "image": "goods_images/dd6910a6eb323b213c797f2c55d7a4f3.jpg",
       "price": "250.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 4
     }
   },
@@ -308,7 +308,7 @@
       "description": "",
       "image": "goods_images/ricetta-torta-di-mele.jpg",
       "price": "200.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 4
     }
   },
@@ -321,7 +321,7 @@
       "description": "",
       "image": "goods_images/c7bdd76d95655b6ba1d428542e41b63b.jpg",
       "price": "200.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 4
     }
   },
@@ -334,8 +334,10 @@
       "description": "",
       "image": "goods_images/3.jpg",
       "price": "220.00",
-      "quantity": 0,
+      "quantity": 100,
       "category": 4
     }
   }
 ]
+
+
