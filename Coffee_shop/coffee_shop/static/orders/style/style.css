@@ -1,19 +1,10 @@
 
 .order-main {
     min-height: 600px;
-        padding: 155px 0;
-        min-height: 100vh;
-      
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-      
-        text-align: center;
-      
-        background-color: var(--blue);
-        
-        background-size: cover;
-        background-position: center;
+    padding: 195px 0;
+    text-align: center;
+    background-color: var(--blue);
+    background-size: cover;
       
 }
 
@@ -31,7 +22,7 @@
     width: 100%;
     flex-wrap: nowrap;
     padding: 20px;
-    margin: 0 30px;
+    
 }
 
 .form-control {
@@ -41,7 +32,7 @@
     color: var(--text);
     margin-left: 10px;
     resize:horizontal;
-    min-width: 240px;
+    min-width: 170px;
     
 
 }
@@ -60,3 +51,5 @@
 .flex-row .form-control {
     flex-grow: 1; /* это заставляет input занимать оставшееся пространство */
 }
+
+
