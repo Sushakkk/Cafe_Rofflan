@@ -14,3 +14,18 @@
     margin-top: 100px;
   
 }
+
+.accordion-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-item{
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.accordion-button{
+    color: var(--light_pink);
+}
