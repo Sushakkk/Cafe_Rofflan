@@ -2,6 +2,7 @@
 .basket {
     min-height: 600px;
         padding: 195px 0;
+        min-height: 100vh;
       
         display: flex;
         justify-content: center;

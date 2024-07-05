@@ -1,0 +1,16 @@
+.profile{
+    margin-top: 60px;
+    display: flex;
+}
+
+
+.profile img{
+    max-width: 267px;
+    border-radius: 10px;
+}
+
+
+.prof{
+    margin-top: 100px;
+  
+}

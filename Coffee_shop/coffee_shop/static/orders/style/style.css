@@ -2,6 +2,7 @@
 .order-main {
     min-height: 600px;
         padding: 155px 0;
+        min-height: 100vh;
       
         display: flex;
         justify-content: center;
@@ -22,6 +23,7 @@
 
 .details{
     display: flex;
+    flex-direction: column;
     justify-content: start;
     text-align: left;
     color: var(--text);
@@ -42,4 +44,19 @@
     min-width: 240px;
     
 
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-row .form-label {
+    margin-right: 0.5rem; /* это добавляет отступ справа от label */
+    white-space: nowrap;
+    
+}
+
+.flex-row .form-control {
+    flex-grow: 1; /* это заставляет input занимать оставшееся пространство */
 }

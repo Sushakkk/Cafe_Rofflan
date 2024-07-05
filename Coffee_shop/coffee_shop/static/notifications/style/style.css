@@ -50,7 +50,7 @@
   justify-content: center;
   height: 35px;
   min-width: 35px;
-  background-color: #2770ff;
+  /* background-color: #2770ff; */
   color: #fff;
   font-size: 20px;
   border-radius: 50%;
@@ -102,7 +102,7 @@
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: #2770ff;
+  /* background-color: #2770ff; */
 }
 
 .progress.active:before {
@@ -120,16 +120,14 @@ button {
   font-size: 20px;
   outline: none;
   border: none;
-  background-color: #2770ff;
+  /* background-color: #2770ff; */
   color: #fff;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-button:hover {
-  background-color: #2770ff;
-}
+
 
 .toast.active ~ button {
   pointer-events: none;

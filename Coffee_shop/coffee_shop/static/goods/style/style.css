@@ -7,6 +7,20 @@
 }
 
 
+.menu {
+    min-height: 600px;
+    padding: 185px 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text); */
+    text-align: center;
+    background-color: var(--blue);
+    background-size: cover;
+
+}
+
+
 
 
 #card_name{
