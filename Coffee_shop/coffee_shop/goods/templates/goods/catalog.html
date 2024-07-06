@@ -38,10 +38,14 @@
     <div class="container">
 
         <h2 class="title">Наше Меню</h2>
-        {% block modal_basket %}
-    {% include "includes/basket_button.html"%}
-    
-    {% endblock %}
+
+        <div class="search-menu">
+            {% block modal_basket %}
+            {% include "includes/basket_button.html"%}
+            {% endblock %}
+            <form  role="search" action="{% url "menu:search" %}" method="get">
+            <input  class="form-control me-2" type="search" name="q" placeholder="Поиск" aria-label="Search">
+        </div>
 
         {% comment %} Категории class="checked"{% endcomment %}
 

@@ -29,3 +29,12 @@
 .accordion-button{
     color: var(--light_pink);
 }
+
+
+@media (max-width: 560px) {
+    .profile{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+  }
