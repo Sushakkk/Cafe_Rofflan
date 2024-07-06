@@ -16,13 +16,27 @@
 
 }
 
+.search-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+input::placeholder {color: var(--light_pink) !important;}
 
 
+
+.form-control:focus {
+    color: var(--text);
+    background-color: var(--blue);
+    /* border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25); */
+}
 
 #card_name{
     font-size: var(--font-size-p);
     color: var(--dark_pink);
-    white-space: nowrap;
+   
 }
 #card-title{
     margin-bottom: 30px;

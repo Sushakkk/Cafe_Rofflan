@@ -21,7 +21,7 @@
       "description": "Традиционное блюдо из яиц, приготовленных в соусе из томатов, перца и лука.",
       "image": "goods_images/e90d26356bcaf7ad868f49e14965f980.jpeg",
       "price": "299.00",
-      "quantity": 100,
+      "quantity": 98,
       "category": 3
     }
   },
@@ -34,7 +34,7 @@
       "description": "Пышный омлет, приготовленный с добавлением свежих овощей и зелени.",
       "image": "goods_images/IMG_0756.0823d7e08c7863522c4b3643c0d0230f.jpg",
       "price": "250.00",
-      "quantity": 100,
+      "quantity": 99,
       "category": 3
     }
   },
@@ -60,7 +60,7 @@
       "description": "Вкусные блины, поданные с сладкой сгущенкой.",
       "image": "goods_images/blinciki-so-sgusennym-molokom-777.jpg",
       "price": "300.00",
-      "quantity": 3,
+      "quantity": 100,
       "category": 3
     }
   },
@@ -73,7 +73,7 @@
       "description": "Сытная рисовая каша с добавлением молока и сахара.",
       "image": "goods_images/021020_sandutsa_071.jpg",
       "price": "170.00",
-      "quantity": 100,
+      "quantity": 99,
       "category": 3
     }
   },
@@ -99,7 +99,7 @@
       "description": "Американские панкейки, поданные с кленовым сиропом и свежими ягодами.",
       "image": "goods_images/0973aa5f79762550f5fccb02427d07e1.jpeg",
       "price": "350.00",
-      "quantity": 100,
+      "quantity": 99,
       "category": 3
     }
   },
@@ -129,215 +129,478 @@
       "category": 3
     }
   },
+
+
+
   
-  {
-    "model": "goods.dishes",
-    "pk": 11,
-    "fields": {
-      "name": "Медовик",
-      "slug": "medovik",
-      "description": "",
-      "image": "goods_images/1647716304_30-amiel-club-p-medovik-kartinki-30.jpg",
-      "price": "150.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 12,
-    "fields": {
-      "name": "Полено",
-      "slug": "poleno",
-      "description": "",
-      "image": "goods_images/1645007941_80-klublady-ru-p-tort-poleno-foto-83.jpg",
-      "price": "300.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 13,
-    "fields": {
-      "name": "Шоколадный",
-      "slug": "shokoladnyj",
-      "description": "",
-      "image": "goods_images/1644702296_8-balthazar-club-p-kusok-shokoladnogo-torta-12.jpg",
-      "price": "230.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 14,
-    "fields": {
-      "name": "Наполеон",
-      "slug": "napoleon",
-      "description": "",
-      "image": "goods_images/1583412579_4-p-deserti-napoleon-6-1536x1018.jpg",
-      "price": "180.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 15,
-    "fields": {
-      "name": "Чизкейк",
-      "slug": "chizkejk",
-      "description": "",
-      "image": "goods_images/1676285752_balthazar-club-p-chizkeik-kholodnii-desert-krasivo-39.jpg",
-      "price": "180.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 16,
-    "fields": {
-      "name": "Морковный",
-      "slug": "morkovnyj",
-      "description": "",
-      "image": "goods_images/1684786942_mykaleidoscope-ru-p-olga-shobutinskaya-morkovnii-tort-krasivo-63.jpg",
-      "price": "200.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 17,
-    "fields": {
-      "name": "Сникерс",
-      "slug": "snikers",
-      "description": "",
-      "image": "goods_images/1674538779_balthazar-club-p-tort-snikers-bez-vipechki-pinterest-73.jpg",
-      "price": "330.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 18,
-    "fields": {
-      "name": "Москва",
-      "slug": "moskva",
-      "description": "",
-      "image": "goods_images/scale_1200.png",
-      "price": "350.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 19,
-    "fields": {
-      "name": "Сметанный",
-      "slug": "smetannyj",
-      "description": "",
-      "image": "goods_images/smetannik-retsept06.jpg",
-      "price": "170.00",
-      "quantity": 100,
-      "category": 7
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 20,
-    "fields": {
-      "name": "Треугольник",
-      "slug": "treugolnik",
-      "description": "",
-      "image": "goods_images/1-10.jpg",
-      "price": "110.00",
-      "quantity": 100,
-      "category": 4
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 21,
-    "fields": {
-      "name": "Курник",
-      "slug": "kurnik",
-      "description": "",
-      "image": "goods_images/1675547464_balthazar-club-p-kurnik-pirog-iz-sloenogo-testa-instagram-3.jpg",
-      "price": "220.00",
-      "quantity": 100,
-      "category": 4
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 22,
-    "fields": {
-      "name": "Пирог с яйцом и луком",
-      "slug": "pirog-s-yajcom-i-lukom",
-      "description": "",
-      "image": "goods_images/pirog-s-luk-i-yayc.jpg",
-      "price": "220.00",
-      "quantity": 100,
-      "category": 4
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 23,
-    "fields": {
-      "name": "Пирог с мясом",
-      "slug": "pirog-s-myasom",
-      "description": "",
-      "image": "goods_images/dd6910a6eb323b213c797f2c55d7a4f3.jpg",
-      "price": "250.00",
-      "quantity": 100,
-      "category": 4
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 24,
-    "fields": {
-      "name": "Шарлотка",
-      "slug": "sharlotka",
-      "description": "",
-      "image": "goods_images/ricetta-torta-di-mele.jpg",
-      "price": "200.00",
-      "quantity": 100,
-      "category": 4
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 25,
-    "fields": {
-      "name": "Пирог с брусникой",
-      "slug": "pirog-s-brusnikoj",
-      "description": "",
-      "image": "goods_images/c7bdd76d95655b6ba1d428542e41b63b.jpg",
-      "price": "200.00",
-      "quantity": 100,
-      "category": 4
-    }
-  },
-  {
-    "model": "goods.dishes",
-    "pk": 26,
-    "fields": {
-      "name": "Пирог с капустой",
-      "slug": "pirog-s-kapustoj",
-      "description": "",
-      "image": "goods_images/3.jpg",
-      "price": "220.00",
-      "quantity": 100,
-      "category": 4
-    }
-  }
+    {
+      "model": "goods.dishes",
+      "pk": 11,
+      "fields": {
+        "name": "Медовик",
+        "slug": "medovik",
+        "description": "Классический медовый торт с нежными коржами и ароматным медовым кремом. Этот десерт – идеальное сочетание сладости и легкой кислинки, который нравится и детям, и взрослым.",
+        "image": "goods_images/1647716304_30-amiel-club-p-medovik-kartinki-30.jpg",
+        "price": "150.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 12,
+      "fields": {
+        "name": "Полено",
+        "slug": "poleno",
+        "description": "Восхитительный торт 'Полено' с кремом на основе сгущенного молока и орехов. Угощение, которое порадует всех сладкоежек.",
+        "image": "goods_images/1645007941_80-klublady-ru-p-tort-poleno-foto-83.jpg",
+        "price": "300.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 13,
+      "fields": {
+        "name": "Шоколадный",
+        "slug": "shokoladnyj",
+        "description": "Насыщенный шоколадный торт с кремом из темного шоколада. Идеальный выбор для любителей богатого шоколадного вкуса.",
+        "image": "goods_images/1644702296_8-balthazar-club-p-kusok-shokoladnogo-torta-12.jpg",
+        "price": "230.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 14,
+      "fields": {
+        "name": "Наполеон",
+        "slug": "napoleon",
+        "description": "Классический торт 'Наполеон' с множеством слоев тонкого теста и нежного заварного крема. Легкий и воздушный десерт для истинных гурманов.",
+        "image": "goods_images/1583412579_4-p-deserti-napoleon-6-1536x1018.jpg",
+        "price": "180.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 15,
+      "fields": {
+        "name": "Чизкейк",
+        "slug": "chizkejk",
+        "description": "Классический чизкейк с мягким сливочным вкусом и хрустящей основой. Идеальное сочетание текстур и вкусов в каждом кусочке.",
+        "image": "goods_images/1676285752_balthazar-club-p-chizkeik-kholodnii-desert-krasivo-39.jpg",
+        "price": "180.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 16,
+      "fields": {
+        "name": "Морковный",
+        "slug": "morkovnyj",
+        "description": "Ароматный морковный торт с пряностями и орехами. Легкий и полезный десерт, который порадует своим насыщенным вкусом.",
+        "image": "goods_images/1684786942_mykaleidoscope-ru-p-olga-shobutinskaya-morkovnii-tort-krasivo-63.jpg",
+        "price": "200.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 17,
+      "fields": {
+        "name": "Сникерс",
+        "slug": "snikers",
+        "description": "Торт 'Сникерс' с насыщенным вкусом арахиса, карамели и шоколада. Превосходное угощение для любителей сладкого.",
+        "image": "goods_images/1674538779_balthazar-club-p-tort-snikers-bez-vipechki-pinterest-73.jpg",
+        "price": "330.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 18,
+      "fields": {
+        "name": "Москва",
+        "slug": "moskva",
+        "description": "Шедевр кулинарии - торт 'Москва'. Нежные коржи и изысканный крем делают этот торт настоящим произведением искусства.",
+        "image": "goods_images/scale_1200.png",
+        "price": "350.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 19,
+      "fields": {
+        "name": "Сметанный",
+        "slug": "smetannyj",
+        "description": "Нежный сметанный торт с легкой кислинкой и воздушным кремом. Отличный выбор для тех, кто любит баланс сладости и свежести.",
+        "image": "goods_images/smetannik-retsept06.jpg",
+        "price": "170.00",
+        "quantity": 100,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 20,
+      "fields": {
+        "name": "Треугольник",
+        "slug": "treugolnik",
+        "description": "Вкусный пирог 'Треугольник' с нежной начинкой и хрустящей корочкой. Прекрасный выбор для быстрого перекуса.",
+        "image": "goods_images/1-10.jpg",
+        "price": "110.00",
+        "quantity": 100,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 21,
+      "fields": {
+        "name": "Курник",
+        "slug": "kurnik",
+        "description": "Традиционный русский пирог 'Курник' с сочной начинкой из курицы и грибов. Праздничное угощение для всей семьи.",
+        "image": "goods_images/1675547464_balthazar-club-p-kurnik-pirog-iz-sloenogo-testa-instagram-3.jpg",
+        "price": "220.00",
+        "quantity": 100,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 22,
+      "fields": {
+        "name": "Пирог с яйцом и луком",
+        "slug": "pirog-s-yajcom-i-lukom",
+        "description": "Сытный пирог с начинкой из яиц и зеленого лука. Отличный выбор для завтрака или перекуса.",
+        "image": "goods_images/pirog-s-luk-i-yayc.jpg",
+        "price": "220.00",
+        "quantity": 100,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 23,
+      "fields": {
+        "name": "Пирог с мясом",
+        "slug": "pirog-s-myasom",
+        "description": "Аппетитный пирог с сочной мясной начинкой. Сытное и вкусное блюдо для всей семьи.",
+        "image": "goods_images/dd6910a6eb323b213c797f2c55d7a4f3.jpg",
+        "price": "250.00",
+        "quantity": 100,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 24,
+      "fields": {
+        "name": "Шарлотка",
+        "slug": "sharlotka",
+        "description": "Классическая шарлотка с ароматными яблоками и корицей. Нежное и воздушное тесто делает этот пирог настоящим удовольствием.",
+        "image": "goods_images/ricetta-torta-di-mele.jpg",
+        "price": "200.00",
+        "quantity": 100,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 25,
+      "fields": {
+        "name": "Пирог с брусникой",
+        "slug": "pirog-s-brusnikoj",
+        "description": "Вкусный пирог с начинкой из брусники. Легкая кислинка ягоды придает пирогу неповторимый вкус.",
+        "image": "goods_images/c7bdd76d95655b6ba1d428542e41b63b.jpg",
+        "price": "200.00",
+        "quantity": 100,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 26,
+      "fields": {
+        "name": "Пирог с капустой",
+        "slug": "pirog-s-kapustoj",
+        "description": "Сытный пирог с начинкой из свежей капусты. Прекрасный вариант для семейного обеда или ужина.",
+        "image": "goods_images/3.jpg",
+        "price": "220.00",
+        "quantity": 100,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 27,
+      "fields": {
+        "name": "Оттонель",
+        "slug": "ottonel",
+        "description": "Изысканный десерт 'Оттонель' с утонченным вкусом и нежной текстурой. Подходит для настоящих гурманов.",
+        "image": "goods_images/оттонель.jpg",
+        "price": "240.00",
+        "quantity": 100,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 28,
+      "fields": {
+        "name": "Баваруа",
+        "slug": "bavarua",
+        "description": "Нежный десерт 'Баваруа' с насыщенным сливочным вкусом и воздушной текстурой. Идеально для утонченного чаепития.",
+        "image": "goods_images/баваруа.jpg",
+        "price": "270.00",
+        "quantity": 100,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 29,
+      "fields": {
+        "name": "Безе",
+        "slug": "beze",
+        "description": "Легкий десерт 'Безе' с хрустящей корочкой и нежной сердцевиной. Отличный выбор для сладкоежек.",
+        "image": "goods_images/1703331219_mykaleidoscope-ru-p-rulet-beze-oboi-64.jpg",
+        "price": "170.00",
+        "quantity": 100,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 30,
+      "fields": {
+        "name": "Корзинка с клубникой",
+        "slug": "korzinka-s-klubnikoj",
+        "description": "Вкусный десерт 'Корзинка с клубникой' с хрустящей основой и свежей клубничной начинкой. Идеально для летнего настроения.",
+        "image": "goods_images/scale_1200.jpeg",
+        "price": "200.00",
+        "quantity": 100,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.dishes",
+      "pk": 31,
+      "fields": {
+        "name": "Шоколадный эклер",
+        "slug": "shokoladnyj-ekler",
+        "description": "Нежный эклер с насыщенным шоколадным кремом и хрустящей глазурью. Прекрасный выбор для любителей шоколада.",
+        "image": "goods_images/1583189090_8-p-ekleri-22.jpg",
+        "price": "170.00",
+        "quantity": 100,
+        "category": 5
+      }
+    },
+    {
+        "model": "goods.dishes",
+        "pk": 32,
+        "fields": {
+          "name": "Кленовый пекан",
+          "slug": "klenovyj-pekan",
+          "description": "Сладкая выпечка с насыщенным вкусом кленового сиропа и орехами пекан.",
+          "image": "goods_images/кленовый_пекан.jpg",
+          "price": "170.00",
+          "quantity": 100,
+          "category": 6
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 33,
+        "fields": {
+          "name": "Круассан с малиной",
+          "slug": "kruassan-s-malinoj",
+          "description": "Нежный круассан с ароматной малиновой начинкой.",
+          "image": "goods_images/плоский_круассан_с_малиной.jpg",
+          "price": "200.00",
+          "quantity": 100,
+          "category": 6
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 34,
+        "fields": {
+          "name": "Вензель с малиной",
+          "slug": "venzel-s-malinoj",
+          "description": "Воздушная выпечка в форме вензеля с малиновым наполнением.",
+          "image": "goods_images/a1bc8f3db8dc27e46c489090afa51fef-680x500_BPa3q2I.jpeg",
+          "price": "250.00",
+          "quantity": 100,
+          "category": 6
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 35,
+        "fields": {
+          "name": "Датская слойка",
+          "slug": "datskaya-slojka",
+          "description": "Традиционная датская слойка с ароматной начинкой.",
+          "image": "goods_images/датская_слойка.jpg",
+          "price": "250.00",
+          "quantity": 100,
+          "category": 6
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 36,
+        "fields": {
+          "name": "Слойка португеза",
+          "slug": "slojka-portugeza",
+          "description": "Португальская выпечка с легким кремом и хрустящей корочкой.",
+          "image": "goods_images/слойка_португеза.jpg",
+          "price": "170.00",
+          "quantity": 100,
+          "category": 6
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 37,
+        "fields": {
+          "name": "Слойка баварская с орехом",
+          "slug": "slojka-bavarskaya-s-orehom",
+          "description": "Хрустящая слойка с насыщенным ореховым вкусом по баварскому рецепту.",
+          "image": "goods_images/баварская_с_орехом.jpg",
+          "price": "210.00",
+          "quantity": 100,
+          "category": 6
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 38,
+        "fields": {
+          "name": "Капучино",
+          "slug": "kapuchino",
+          "description": "Классический итальянский кофе с густой пенкой.",
+          "image": "goods_images/Drinks_Coffee_Cup_499110.jpg",
+          "price": "200.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 39,
+        "fields": {
+          "name": "Латте",
+          "slug": "latte",
+          "description": "Мягкий и сливочный кофе с добавлением молока.",
+          "image": "goods_images/1654634365_3-kartinkin-net-p-kartinki-latte-3.jpg",
+          "price": "220.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 40,
+        "fields": {
+          "name": "Американо",
+          "slug": "amerikano",
+          "description": "Крепкий черный кофе с добавлением горячей воды.",
+          "image": "goods_images/1251089_1585043604.1016_original.jpg",
+          "price": "170.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 41,
+        "fields": {
+          "name": "Эспрессо",
+          "slug": "espresso",
+          "description": "Классический крепкий кофе небольшого объема.",
+          "image": "goods_images/kofe-i-kofejnye-zerna.jpg",
+          "price": "190.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 42,
+        "fields": {
+          "name": "Какао",
+          "slug": "kakao",
+          "description": "Горячий напиток на основе какао и молока.",
+          "image": "goods_images/310.970.jpg",
+          "price": "210.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 43,
+        "fields": {
+          "name": "Горячий шоколад",
+          "slug": "goryachij-shokolad",
+          "description": "Сладкий и насыщенный горячий шоколад для настоящих гурманов.",
+          "image": "goods_images/1696011443_mykaleidoscope-ru-p-shokolad-kofe-s-molokom-vkontakte-53.jpg",
+          "price": "210.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 44,
+        "fields": {
+          "name": "Черный чай",
+          "slug": "chernyj-chaj",
+          "description": "Классический черный чай с насыщенным вкусом.",
+          "image": "goods_images/1645889840-te-negro-1.jpg",
+          "price": "150.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 45,
+        "fields": {
+          "name": "Зеленый чай",
+          "slug": "zelenyj-chaj",
+          "description": "Освежающий зеленый чай с тонким ароматом.",
+          "image": "goods_images/9c0179ccc1b94d690250231005488251.jpg",
+          "price": "150.00",
+          "quantity": 100,
+          "category": 8
+        }
+      },
+      {
+        "model": "goods.dishes",
+        "pk": 46,
+        "fields": {
+          "name": "Ягодный чай",
+          "slug": "yagodnyj-chaj",
+          "description": "Фруктовый чай с насыщенным ягодным вкусом.",
+          "image": "goods_images/1663619009_7-mykaleidoscope-ru-p-yagodnii-chai-krasivo-8.jpg",
+          "price": "150.00",
+          "quantity": 100,
+          "category": 8
+        }
+      }
+
+
 ]
-
-

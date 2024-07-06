@@ -120,6 +120,7 @@
     margin-right: 15px;
     max-width: 100px; /* Максимальная ширина для управления адаптацией */
     min-width: 43px !important; /* Минимальная ширина для уменьшения на маленьких экранах */
+    border-radius: 10px !important;
 }
 
 
@@ -156,6 +157,7 @@
 .float-left{
     color:black
 }
+
 
 
 .order{
