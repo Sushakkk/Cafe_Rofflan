@@ -1,4 +1,4 @@
- venv/
+Coffee_shop/venv/
 .vscode
 .idea
 db.sqlite3
