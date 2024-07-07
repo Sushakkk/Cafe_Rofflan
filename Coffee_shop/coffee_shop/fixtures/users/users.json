@@ -1,1 +1,142 @@
-[{"model": "users.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$720000$uWMzXVO69x2RqHPn7mfZxj$zDhIsiBXgfj9slvyMGyQycmP6wP3TqI2Uwhf/hS96Eg=", "last_login": "2024-06-26T16:48:22.868Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2024-06-20T09:13:45.118Z", "image": "", "phone": "", "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 2, "fields": {"password": "pbkdf2_sha256$720000$XBmHQqfOsKUT03OIgzbAkR$lKz2M5bAPDL6X4zNuYI4/3tXL0CNx/IxRzwf5yrptR4=", "last_login": "2024-06-21T12:40:35.497Z", "is_superuser": false, "username": "user", "first_name": "Name", "last_name": "Lastname", "email": "fdhg@rambler.ru", "is_staff": false, "is_active": true, "date_joined": "2024-06-21T12:18:08.275Z", "image": "", "phone": "+7 (934)-678-6789", "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 3, "fields": {"password": "pbkdf2_sha256$720000$qq0b5l0ju78WIrps38XBdv$Vho1z534yDPwP94mTfydm7I2Cn83dtjgUCWc2VDPHlE=", "last_login": "2024-06-26T15:54:38.901Z", "is_superuser": false, "username": "User2", "first_name": "Name2", "last_name": "Lastname", "email": "fdhg@mail.ru", "is_staff": false, "is_active": true, "date_joined": "2024-06-21T12:45:04.332Z", "image": "", "phone": "+7 (934)-678-6231", "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 4, "fields": {"password": "pbkdf2_sha256$720000$CQcDqZWArcJKbUfMYsvr10$fX42+MFpCR7w+5xRyuhzNxAg0SRbeF+rFkhSTLaOLec=", "last_login": "2024-06-26T15:52:22.669Z", "is_superuser": false, "username": "User3", "first_name": "Name2", "last_name": "Lastname", "email": "fdhg@mail.ru", "is_staff": false, "is_active": true, "date_joined": "2024-06-21T12:46:09.152Z", "image": "", "phone": "+7 (934)-678-5555", "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 5, "fields": {"password": "pbkdf2_sha256$720000$wJHgDNmW5GyiTXHDzVQQBE$zSWShufik+W6dauTvl1RDKCNGrWzJCQHDwnZtQXHiys=", "last_login": "2024-06-21T20:26:27.190Z", "is_superuser": false, "username": "User4", "first_name": "Name4", "last_name": "Lastname4", "email": "fdhg@mail.ru", "is_staff": false, "is_active": true, "date_joined": "2024-06-21T15:46:17.081Z", "image": "", "phone": "+7 (934)-678-6474", "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 6, "fields": {"password": "pbkdf2_sha256$720000$0C2Msos1SIO0rb9ql6qh3c$2frA/A5n3MCpkQrvUZpteMi20zAJeoEUKcFrzM1VQt8=", "last_login": null, "is_superuser": false, "username": "User5", "first_name": "Name5", "last_name": "Lastname5", "email": "fdherfg@mail.ru", "is_staff": false, "is_active": true, "date_joined": "2024-06-21T15:51:50.706Z", "image": "", "phone": "+7 (954)-123-2345", "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 7, "fields": {"password": "pbkdf2_sha256$720000$AGirmioEwnaae9aCVEu8L9$FMZo+PqKgdiozdjpibJXJU9VmCGbWRshavoXVf1xwjA=", "last_login": "2024-06-25T13:11:43.175Z", "is_superuser": false, "username": "User6", "first_name": "Name6", "last_name": "Lastname", "email": "wetqtuy@mail.ru", "is_staff": false, "is_active": true, "date_joined": "2024-06-21T16:05:50.768Z", "image": "users_images/Отдел_бронирования_.drawio.png", "phone": "+7 (976)-789-7652", "groups": [], "user_permissions": []}}]
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$uWMzXVO69x2RqHPn7mfZxj$zDhIsiBXgfj9slvyMGyQycmP6wP3TqI2Uwhf/hS96Eg=",
+            "last_login": "2024-07-06T17:03:37.894Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "Dima",
+            "last_name": "Radchenko",
+            "email": "radchenko270304@rambler.ru",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-06-20T09:13:45.118Z",
+            "image": "",
+            "phone": "+7 (888)-888-8888",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$XBmHQqfOsKUT03OIgzbAkR$lKz2M5bAPDL6X4zNuYI4/3tXL0CNx/IxRzwf5yrptR4=",
+            "last_login": "2024-07-06T15:19:22.311Z",
+            "is_superuser": false,
+            "username": "user",
+            "first_name": "Name",
+            "last_name": "Lastname",
+            "email": "fdhg@rambler.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-21T12:18:08.275Z",
+            "image": "",
+            "phone": "+7 (934)-678-6789",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$CQcDqZWArcJKbUfMYsvr10$fX42+MFpCR7w+5xRyuhzNxAg0SRbeF+rFkhSTLaOLec=",
+            "last_login": "2024-07-06T16:55:44.104Z",
+            "is_superuser": false,
+            "username": "User3",
+            "first_name": "Name2",
+            "last_name": "Lastname",
+            "email": "fdhg@mail.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-21T12:46:09.152Z",
+            "image": "users_images/2024-06-25_22-59-53.png",
+            "phone": "+7 (934)-678-5555",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$wJHgDNmW5GyiTXHDzVQQBE$zSWShufik+W6dauTvl1RDKCNGrWzJCQHDwnZtQXHiys=",
+            "last_login": "2024-06-21T20:26:27.190Z",
+            "is_superuser": false,
+            "username": "User4",
+            "first_name": "Name4",
+            "last_name": "Lastname4",
+            "email": "fdhg@mail.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-21T15:46:17.081Z",
+            "image": "",
+            "phone": "+7 (934)-678-6474",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$0C2Msos1SIO0rb9ql6qh3c$2frA/A5n3MCpkQrvUZpteMi20zAJeoEUKcFrzM1VQt8=",
+            "last_login": "2024-07-06T16:54:22.886Z",
+            "is_superuser": false,
+            "username": "User5",
+            "first_name": "Name5",
+            "last_name": "Lastname5",
+            "email": "fdherfg@mail.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-21T15:51:50.706Z",
+            "image": "",
+            "phone": "+7 (954)-123-2345",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$AGirmioEwnaae9aCVEu8L9$FMZo+PqKgdiozdjpibJXJU9VmCGbWRshavoXVf1xwjA=",
+            "last_login": "2024-06-25T13:11:43.175Z",
+            "is_superuser": false,
+            "username": "User6",
+            "first_name": "Name6",
+            "last_name": "Lastname",
+            "email": "wetqtuy@mail.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-06-21T16:05:50.768Z",
+            "image": "users_images/пїЅпїЅпїЅпїЅпїЅ_пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ_.drawio.png",
+            "phone": "+7 (976)-789-7652",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$bf3XgmLTGE0RaaGUbL0RUR$ttc3vsPDdZyJ3tPBHznz6SzV7CiNPid7xrzjq3XTY7g=",
+            "last_login": "2024-07-06T16:53:37.727Z",
+            "is_superuser": false,
+            "username": "User8",
+            "first_name": "Name8",
+            "last_name": "LastName8",
+            "email": "sadgsrh@fh.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-07-01T23:15:13.099Z",
+            "image": "",
+            "phone": "+7 (777)-777-7777",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]
