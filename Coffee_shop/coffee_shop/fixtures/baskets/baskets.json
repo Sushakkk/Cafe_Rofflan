@@ -1,15 +1,5 @@
 [
-    {
-        "model": "baskets.baskets",
-        "pk": 22,
-        "fields": {
-            "user": 3,
-            "dish": 1,
-            "quantity": 4,
-            "session_key": null,
-            "created_timestamp": "2024-06-26T13:27:28.959Z"
-        }
-    },
+    
     {
         "model": "baskets.baskets",
         "pk": 23,
@@ -19,17 +9,6 @@
             "quantity": 2,
             "session_key": "zhpforkk2n5bpyiuxf3t21vogvdxanhr",
             "created_timestamp": "2024-06-26T15:52:10.767Z"
-        }
-    },
-    {
-        "model": "baskets.baskets",
-        "pk": 24,
-        "fields": {
-            "user": 3,
-            "dish": 1,
-            "quantity": 2,
-            "session_key": "2rxzlwj2am1ok74a6fku593ijg54ube5",
-            "created_timestamp": "2024-06-26T15:54:29.297Z"
         }
     },
     {

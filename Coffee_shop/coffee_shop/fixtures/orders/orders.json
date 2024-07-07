@@ -1,0 +1,41 @@
+[
+    {
+        "model": "orders.order",
+        "pk": 20,
+        "fields": {
+            "user": 1,
+            "created_timestamp": "2024-07-06T15:17:02.418Z",
+            "requires_delivery": false,
+            "delivery_address": "",
+            "payment_on_get": false,
+            "is_paid": false,
+            "status": "� ���������"
+        }
+    },
+    {
+        "model": "orders.order",
+        "pk": 21,
+        "fields": {
+            "user": 2,
+            "created_timestamp": "2024-07-06T15:19:57.157Z",
+            "requires_delivery": false,
+            "delivery_address": "",
+            "payment_on_get": false,
+            "is_paid": false,
+            "status": "� ���������"
+        }
+    },
+    {
+        "model": "orders.order",
+        "pk": 22,
+        "fields": {
+            "user": 1,
+            "created_timestamp": "2024-07-06T17:06:12.503Z",
+            "requires_delivery": false,
+            "delivery_address": "",
+            "payment_on_get": false,
+            "is_paid": false,
+            "status": "� ���������"
+        }
+    }
+]

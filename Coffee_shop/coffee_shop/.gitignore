@@ -4,3 +4,15 @@
 db.sqlite3
 coffee_shop/__pycache__
 main/__pycache__
+users/__pycache__
+orders/__pycache__
+goods/__pycache__
+baskets/__pycache__
+baskets/templatetags/__pycache__/
+goods/templatetags/__pycache__/
+
+goods/migrations/__pycache__/
+baskets/migrations/__pycache__/
+main/migrations/__pycache__/
+orders/migrations/__pycache__/
+users/migrations/__pycache__/
